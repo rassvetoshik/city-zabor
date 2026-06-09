@@ -75,7 +75,8 @@ textarea {
 }
 
 .header-inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   justify-content: space-between;
   gap: 18px;
@@ -125,8 +126,8 @@ textarea {
 
 .brand-subtitle {
   font-family: "Public Sans", sans-serif;
-  font-size: 0.68rem;
-  letter-spacing: 0.16em;
+  font-size: 0.58rem;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
   color: var(--muted);
   white-space: nowrap;
@@ -135,12 +136,15 @@ textarea {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 24px;
+  justify-content: center;
+  gap: clamp(14px, 1.3vw, 24px);
+  min-width: 0;
   font-family: "Public Sans", sans-serif;
-  font-size: 0.76rem;
+  font-size: clamp(0.68rem, 0.7vw, 0.76rem);
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
+  white-space: nowrap;
 }
 
 .site-nav a:hover {
@@ -179,7 +183,8 @@ textarea {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex: 0 0 auto;
+  min-width: 0;
+  justify-content: flex-end;
 }
 
 .header-calc,
@@ -190,7 +195,7 @@ textarea {
   min-height: 44px;
   border-radius: var(--radius-sm);
   font-family: "Public Sans", sans-serif;
-  font-size: 0.72rem;
+  font-size: clamp(0.64rem, 0.68vw, 0.72rem);
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -198,14 +203,14 @@ textarea {
 }
 
 .header-calc {
-  padding: 0 14px;
+  padding: 0 clamp(10px, 0.9vw, 14px);
   background: rgba(9, 76, 178, 0.1);
   color: var(--primary);
   transition: transform 0.22s ease, background-color 0.22s ease, box-shadow 0.22s ease;
 }
 
 .header-phone {
-  padding: 0 10px;
+  padding: 0 clamp(6px, 0.75vw, 10px);
   color: var(--text);
   letter-spacing: 0.04em;
   transition: color 0.22s ease, transform 0.22s ease;
@@ -266,11 +271,11 @@ textarea {
   align-items: center;
   justify-content: center;
   min-height: 52px;
-  padding: 0 18px;
+  padding: 0 clamp(14px, 1vw, 18px);
   border: 0;
   border-radius: var(--radius-sm);
   font-family: "Public Sans", sans-serif;
-  font-size: 0.74rem;
+  font-size: clamp(0.68rem, 0.7vw, 0.74rem);
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -579,6 +584,7 @@ textarea {
 }
 
 .metrics-grid article:hover {
+  color: var(--primary);
   transform: translateY(-6px);
 }
 
@@ -611,6 +617,11 @@ textarea {
   color: var(--muted);
   font-size: 0.88rem;
   line-height: 1.45;
+  transition: color 0.25s ease;
+}
+
+.metrics-grid article:hover span {
+  color: var(--text);
 }
 
 .materials-advantage {
@@ -3374,7 +3385,6 @@ textarea {
 }
 
 .product-tile,
-.metrics-grid article,
 .materials-advantage,
 .calculator-card,
 .process-grid article,
@@ -3393,7 +3403,6 @@ textarea {
 }
 
 .product-tile:hover,
-.metrics-grid article:hover,
 .process-grid article:hover,
 .fences-type-card:hover,
 .fences-project-grid article:hover,
@@ -3505,7 +3514,6 @@ textarea {
 
 :is(
   .product-tile,
-  .metrics-grid article,
   .process-grid article,
   .fences-type-card,
   .fences-project-grid article,
@@ -3558,6 +3566,61 @@ textarea {
   }
 }
 
+@media (max-width: 1520px) {
+  .header-inner {
+    gap: 14px;
+  }
+
+  .brand-logo-wrap {
+    width: 48px;
+    height: 48px;
+  }
+
+  .brand-title {
+    font-size: 1.16rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.54rem;
+    letter-spacing: 0.11em;
+  }
+
+  .header-tools {
+    gap: 8px;
+  }
+
+  .messenger-link,
+  .gates-stitch-messengers a {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 1420px) {
+  .header-inner {
+    grid-template-columns: auto minmax(0, 1fr);
+    row-gap: 10px;
+    padding: 12px 0;
+  }
+
+  .site-nav {
+    grid-column: 1 / -1;
+    order: 3;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 2px 0 8px;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .header-tools {
+    justify-self: end;
+  }
+}
+
 @media (max-width: 1300px) {
   .header-tools .header-action,
   .gates-stitch-actions .gates-stitch-consult {
@@ -3566,6 +3629,31 @@ textarea {
 
   .site-nav {
     gap: 18px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .header-inner {
+    grid-template-columns: 1fr auto;
+  }
+
+  .brand {
+    min-width: 0;
+  }
+
+  .brand-text {
+    min-width: 0;
+  }
+
+  .brand-title,
+  .brand-subtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .header-tools {
+    flex-wrap: wrap;
+    max-width: 560px;
   }
 }
 
