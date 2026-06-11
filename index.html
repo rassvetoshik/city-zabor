@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:wght@400;600;700&family=Public+Sans:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260608-service-links" />
+    <link rel="stylesheet" href="./styles.css?v=20260611-portfolio" />
   </head>
   <body>
     <header class="site-header">
@@ -34,6 +34,7 @@
           <a href="./fences.html">Заборы</a>
           <a href="./gates.html">Ворота</a>
           <a href="./canopies.html">Навесы</a>
+          <a href="./portfolio.html">Портфолио</a>
           <a href="#services">Услуги</a>
           <a href="#contact">Контакты</a>
         </nav>
@@ -122,7 +123,7 @@
             <img class="hero-slide" src="./assets/hero-slide-1.webp" alt="Навес и забор на частном участке" />
             <img class="hero-slide" src="./assets/hero-slide-2.webp" alt="Забор жалюзи с кирпичными столбами" />
             <img class="hero-slide" src="./assets/hero-slide-3.webp" alt="Современный забор у частного дома" />
-            <img class="hero-slide" src="./assets/hero-canopy-evening.png" alt="Навес для автомобилей на участке вечером" />
+            <img class="hero-slide" src="./assets/hero-canopy-evening.jpg" alt="Навес для автомобилей на участке вечером" />
           </div>
         </div>
         <div class="hero-overlay"></div>
@@ -182,6 +183,7 @@
           <div class="services-grid">
             <a class="service-card service-card-large" href="./fences.html">
               <img src="./assets/catalog-fences.webp" alt="Каталог заборов" />
+              <span class="service-card-action">Смотреть каталог</span>
               <div class="service-card-copy">
                 <h3>Каталог заборов</h3>
                 <p>
@@ -193,6 +195,7 @@
 
             <a class="service-card" href="./gates.html">
               <img src="./assets/catalog-gates.webp" alt="Откатные и распашные ворота" />
+              <span class="service-card-action">Перейти</span>
               <div class="service-card-copy">
                 <h3>Откатные и распашные ворота</h3>
                 <p>Изготовление, монтаж и подготовка под автоматику.</p>
@@ -201,14 +204,16 @@
 
             <a class="service-card" href="./canopies.html">
               <img src="./assets/service-canopy-main.webp" alt="Навесы для автомобиля" />
+              <span class="service-card-action">Перейти</span>
               <div class="service-card-copy">
                 <h3>Навесы для автомобиля</h3>
                 <p>Конструкции для автомобиля, входной группы и дворовой зоны.</p>
               </div>
             </a>
 
-            <article class="service-card service-card-wide">
-              <img src="./assets/fence-brick.webp" alt="Забор с кирпичными столбами" />
+            <a class="service-card service-card-wide" href="./portfolio.html">
+              <img src="./assets/portfolio-louver-fence.jpg" alt="Реальный объект с ограждением" />
+              <span class="service-card-action">Смотреть работы</span>
               <div class="service-card-copy">
                 <h3>Портфолио по реальным объектам</h3>
                 <p>
@@ -216,7 +221,7 @@
                   которые потом можно расширять через админку.
                 </p>
               </div>
-            </article>
+            </a>
           </div>
         </div>
       </section>
@@ -224,10 +229,15 @@
       <section class="section process-section" id="process">
         <div class="container">
           <div class="section-head centered">
+            <span class="section-label">понятный процесс</span>
             <h2>Как мы работаем</h2>
+            <p>
+              Ведем проект по шагам: от бесплатного выезда и замера до монтажа,
+              сдачи объекта и гарантии на изделия.
+            </p>
           </div>
 
-          <div class="process-grid">
+          <div class="process-grid" aria-label="Этапы работы">
             <article>
               <span>01</span>
               <h3>Заявка</h3>
@@ -253,6 +263,18 @@
               <h3>Сдача</h3>
               <p>Передаем готовый объект, гарантию на изделия и условия договора.</p>
             </article>
+          </div>
+
+          <div class="process-summary">
+            <div>
+              <strong>Бесплатный выезд</strong>
+              <span>смотрим объект и подбираем решение на месте</span>
+            </div>
+            <div>
+              <strong>По договору</strong>
+              <span>сроки, комплектация и гарантия фиксируются заранее</span>
+            </div>
+            <a class="process-summary-link" href="#calculator">Рассчитать проект</a>
           </div>
         </div>
       </section>
@@ -435,7 +457,7 @@
                     </label>
                     <label class="option-card option-card-media">
                       <input type="radio" name="canopy-kind" value="Козырек входной группы" />
-                      <span><img src="./assets/hero-canopy-evening.png" alt="" /><strong>Козырек</strong></span>
+                      <span><img src="./assets/hero-canopy-evening.jpg" alt="" /><strong>Козырек</strong></span>
                     </label>
                   </div>
                 </div>
@@ -627,6 +649,7 @@
           <a href="./fences.html">Заборы</a>
           <a href="./gates.html">Ворота</a>
           <a href="./canopies.html">Навесы</a>
+          <a href="./portfolio.html">Портфолио</a>
           <a href="#services">Услуги</a>
           <a href="#calculator">Расчет</a>
           <a href="#contact">Контакты</a>
