@@ -15,7 +15,10 @@
   --cream: #f5e6dc;
   --cream-soft: #fffaf6;
   --cream-line: rgba(139, 112, 76, 0.16);
-  --page-gradient: linear-gradient(135deg, #ffffff 0%, #fffaf6 44%, #f5e6dc 100%);
+  --page-gradient:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.9) 0 18rem, transparent 34rem),
+    radial-gradient(circle at 84% 28%, rgba(245, 230, 220, 0.7) 0 20rem, transparent 44rem),
+    linear-gradient(135deg, #ffffff 0%, #fffaf7 42%, #f6e7dd 100%);
   --page-gradient-header: var(--page-gradient);
   --page-gradient-header-scrolled: var(--page-gradient);
   --container: 1240px;
@@ -645,7 +648,7 @@ textarea {
 
 .product-strip {
   background: transparent;
-  border-bottom: 1px solid rgba(27, 28, 29, 0.08);
+  border-bottom: 0;
 }
 
 .product-strip-grid {
@@ -704,14 +707,12 @@ textarea {
 .metrics {
   position: relative;
   padding: 76px 0 70px;
-  background:
-    radial-gradient(circle at 12% 18%, rgba(9, 76, 178, 0.08), transparent 30%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.48), rgba(245, 230, 220, 0.28));
+  background: transparent;
   overflow: hidden;
 }
 
 .metrics::before {
-  content: "";
+  content: none;
   position: absolute;
   inset: 28px max(18px, calc((100vw - var(--container)) / 2)) auto;
   height: 1px;
@@ -2261,10 +2262,7 @@ textarea {
 
 .site-footer {
   padding: 64px 0 30px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 250, 246, 0.58)),
-    radial-gradient(circle at 16% 12%, rgba(9, 76, 178, 0.08), transparent 34%),
-    radial-gradient(circle at 86% 14%, rgba(109, 94, 0, 0.12), transparent 28%);
+  background: transparent;
   border-top: 1px solid rgba(139, 112, 76, 0.16);
 }
 
