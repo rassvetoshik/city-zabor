@@ -14,6 +14,7 @@
 
   const revealSelector = [
     ".section-head",
+    ".metrics-showcase",
     ".metrics-grid article",
     ".materials-advantage",
     ".product-tile",

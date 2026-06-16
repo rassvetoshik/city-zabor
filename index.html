@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:wght@400;600;700&family=Public+Sans:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260611-portfolio" />
+    <link rel="stylesheet" href="./styles.css?v=20260616-metrics-refresh" />
   </head>
   <body>
     <header class="site-header">
@@ -148,24 +148,59 @@
         </div>
       </section>
 
-      <section class="metrics">
-        <div class="container metrics-grid">
-          <article>
-            <strong>100+</strong>
-            <span>фото и объектов в портфолио</span>
-          </article>
-          <article>
-            <strong>Индивидуально</strong>
-            <span>расчет под размеры, материалы и задачу</span>
-          </article>
-          <article>
-            <strong>Москва и МО</strong>
-            <span>работаем только по Москве и области</span>
-          </article>
-          <article>
-            <strong>Под ключ</strong>
-            <span>замер, расчет, изготовление и монтаж</span>
-          </article>
+      <section class="metrics" aria-label="Преимущества Сити Заборы">
+        <div class="container metrics-wrap">
+          <div class="metrics-showcase">
+            <div class="metrics-media">
+              <img src="./assets/portfolio-modern-fence.jpg" alt="Готовый современный забор на частном участке" />
+              <img class="metrics-thumb metrics-thumb-one" src="./assets/portfolio-louver-fence.jpg" alt="Фрагмент забора жалюзи" />
+              <img class="metrics-thumb metrics-thumb-two" src="./assets/portfolio-canopy-evening.jpg" alt="Навес и ограждение на участке вечером" />
+              <span class="metrics-badge">100+ реальных фото и объектов</span>
+            </div>
+
+            <div class="metrics-copy">
+              <span class="section-label">почему выбирают</span>
+              <h2>Видно, за что вы платите, еще до начала работ</h2>
+              <p>
+                Показываем реальные объекты, считаем конструкцию под участок и берем
+                весь цикл на себя: замер, материалы, изготовление, монтаж и гарантию.
+              </p>
+              <div class="metrics-proof" aria-label="Ключевые факты">
+                <span><strong>10+ лет</strong> монтажного опыта</span>
+                <span><strong>Москва и МО</strong> без лишней географии</span>
+                <span><strong>Под ключ</strong> от замера до сдачи</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="metrics-grid">
+            <article class="metric-card">
+              <span class="metric-icon metric-icon-calc" aria-hidden="true"></span>
+              <strong>Индивидуальный расчет</strong>
+              <span>под размеры участка, материалы, ворота и бюджет</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-icon metric-icon-image" aria-hidden="true">
+                <img src="./assets/metric-measure.svg" alt="" />
+              </span>
+              <strong>Бесплатный замер</strong>
+              <span>выезд на объект, консультация и первичная смета</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-icon metric-icon-image" aria-hidden="true">
+                <img src="./assets/metric-shield.svg" alt="" />
+              </span>
+              <strong>Гарантия</strong>
+              <span>на выполненные работы и установленные изделия</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-icon metric-icon-image" aria-hidden="true">
+                <img src="./assets/metric-calendar.svg" alt="" />
+              </span>
+              <strong>Соблюдение сроков</strong>
+              <span>фиксируем график и отвечаем за дату сдачи</span>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -235,6 +270,21 @@
               Ведем проект по шагам: от бесплатного выезда и замера до монтажа,
               сдачи объекта и гарантии на изделия.
             </p>
+          </div>
+
+          <div class="process-route" aria-hidden="true">
+            <span class="process-route-line"></span>
+            <span class="process-route-pulse"></span>
+            <span class="process-route-node process-route-node-one"></span>
+            <span class="process-route-node process-route-node-two"></span>
+            <span class="process-route-node process-route-node-three"></span>
+            <span class="process-route-node process-route-node-four"></span>
+            <span class="process-route-node process-route-node-five"></span>
+            <span class="process-cursor"></span>
+            <span class="process-particle process-particle-one"></span>
+            <span class="process-particle process-particle-two"></span>
+            <span class="process-particle process-particle-three"></span>
+            <span class="process-particle process-particle-four"></span>
           </div>
 
           <div class="process-grid" aria-label="Этапы работы">
@@ -329,15 +379,15 @@
           <div class="repair-contact">
             <strong>Сделайте свой участок красивым и безопасным снова</strong>
             <div>
-              <a href="tel:+79013811181">8-901-381-11-81</a>
+              <a href="tel:+79013811181">Связаться с нами</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="metrics materials-section">
+      <section class="metrics materials-section" id="materials-sale">
         <div class="container materials-advantage">
-          <strong>Материалы от ведущих производителей</strong>
+          <strong>Вы можете у нас приобрести материалы от ведущих производителей</strong>
           <div class="materials-copy">
             <span>
               Используем проверенный металл, покрытия и комплектующие, чтобы ограждения,
@@ -636,23 +686,48 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="footer-brand">
-          <div class="footer-brand-row">
-            <img class="footer-logo" src="./assets/site-logo.webp" alt="Логотип компании" />
-            <strong>Сити Заборы</strong>
+      <div class="container footer-shell">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <div class="footer-brand-row">
+              <img class="footer-logo" src="./assets/site-logo.webp" alt="Логотип компании" />
+              <strong>Сити Заборы</strong>
+            </div>
+            <p>
+              Проектируем, изготавливаем и монтируем заборы, ворота и навесы
+              для частных домов в Москве и Московской области.
+            </p>
+            <a class="footer-cta" href="./index.html#contact">Получить расчет</a>
           </div>
-          <p>Заборы всех видов, ворота и навесы в Москве и Московской области.</p>
+
+          <nav class="footer-column" aria-label="Направления">
+            <span>Направления</span>
+            <a href="./fences.html">Заборы</a>
+            <a href="./gates.html">Ворота</a>
+            <a href="./canopies.html">Навесы</a>
+            <a href="./portfolio.html">Портфолио</a>
+          </nav>
+
+          <nav class="footer-column" aria-label="Услуги">
+            <span>Услуги</span>
+            <a href="./index.html#calculator">Расчет стоимости</a>
+            <a href="./index.html#process">Этапы работы</a>
+            <a href="./index.html#materials-sale">Материалы</a>
+            <a href="./index.html#repair">Ремонт заборов</a>
+          </nav>
+
+          <div class="footer-column">
+            <span>Контакты</span>
+            <a href="tel:+79013811181">+7 (901) 381-11-81</a>
+            <a href="tel:+79969668691">Телеграм: +7 996 966-86-91</a>
+            <a href="mailto:cityzabory@mail.ru">cityzabory@mail.ru</a>
+            <p>Москва и Московская область</p>
+          </div>
         </div>
-        <div class="footer-links">
-          <a href="./index.html">Главная</a>
-          <a href="./fences.html">Заборы</a>
-          <a href="./gates.html">Ворота</a>
-          <a href="./canopies.html">Навесы</a>
-          <a href="./portfolio.html">Портфолио</a>
-          <a href="#services">Услуги</a>
-          <a href="#calculator">Расчет</a>
-          <a href="#contact">Контакты</a>
+
+        <div class="footer-bottom">
+          <span>© 2026 Сити Заборы</span>
+          <span>Бесплатный замер, договор, гарантия на работы и изделия</span>
         </div>
       </div>
     </footer>
