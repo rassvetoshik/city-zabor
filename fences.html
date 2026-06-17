@@ -14,14 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:wght@400;600;700&family=Public+Sans:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260616-footer-process" />
+    <link rel="stylesheet" href="./styles.css?v=20260617-gates-canopies-2" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="./index.html">
           <span class="brand-logo-wrap">
-            <img class="brand-logo" src="./assets/site-logo.webp" alt="Логотип компании" />
+            <img class="brand-logo" src="./assets/site-logo-new.png" alt="Логотип компании" />
           </span>
           <span class="brand-text">
             <span class="brand-title">Сити Заборы</span>
@@ -35,7 +35,6 @@
           <a href="./gates.html">Ворота</a>
           <a href="./canopies.html">Навесы</a>
           <a href="./portfolio.html">Портфолио</a>
-          <a href="./index.html#services">Услуги</a>
           <a href="#fences-contact">Контакты</a>
         </nav>
 
@@ -86,11 +85,11 @@
         <div class="container">
           <div class="fences-section-head">
             <span class="fences-kicker">каталог решений</span>
-            <h2>Шесть направлений для частных участков</h2>
+            <h2>Виды заборов</h2>
           </div>
 
           <div class="fences-type-grid">
-            <article class="fences-type-card">
+            <article class="fences-type-card" data-fence-detail="picket">
               <div class="fences-type-media">
                 <img src="./assets/fence-piles-profile-or-picket.png" alt="Забор из металлического штакетника" />
               </div>
@@ -103,10 +102,10 @@
                   <div><dt>Вентиляция</dt><dd>высокая</dd></div>
                   <div><dt>Уход</dt><dd>минимальный</dd></div>
                 </dl>
-                <a href="#fences-contact">Рассчитать</a>
+                <button class="fences-type-open" type="button">Подробнее</button>
               </div>
             </article>
-            <article class="fences-type-card">
+            <article class="fences-type-card" data-fence-detail="profile">
               <div class="fences-type-media">
                 <img src="./assets/fence-profile-gate-wicket.png" alt="Забор из профнастила с воротами и калиткой" />
               </div>
@@ -119,10 +118,10 @@
                   <div><dt>Монтаж</dt><dd>быстрый</dd></div>
                   <div><dt>Бюджет</dt><dd>оптимальный</dd></div>
                 </dl>
-                <a href="#fences-contact">Рассчитать</a>
+                <button class="fences-type-open" type="button">Подробнее</button>
               </div>
             </article>
-            <article class="fences-type-card">
+            <article class="fences-type-card" data-fence-detail="louver">
               <div class="fences-type-media">
                 <img src="./assets/fence-louver-gray.jpeg" alt="Забор-жалюзи" />
               </div>
@@ -135,10 +134,10 @@
                   <div><dt>Вид</dt><dd>премиум</dd></div>
                   <div><dt>Ветер</dt><dd>устойчив</dd></div>
                 </dl>
-                <a href="#fences-contact">Рассчитать</a>
+                <button class="fences-type-open" type="button">Подробнее</button>
               </div>
             </article>
-            <article class="fences-type-card">
+            <article class="fences-type-card" data-fence-detail="ranch">
               <div class="fences-type-media">
                 <img src="./assets/fence-rancho.jpg" alt="Забор ранчо" />
               </div>
@@ -151,10 +150,10 @@
                   <div><dt>Дизайн</dt><dd>легкий</dd></div>
                   <div><dt>Зоны</dt><dd>сад / фасад</dd></div>
                 </dl>
-                <a href="#fences-contact">Рассчитать</a>
+                <button class="fences-type-open" type="button">Подробнее</button>
               </div>
             </article>
-            <article class="fences-type-card">
+            <article class="fences-type-card" data-fence-detail="chainlink">
               <div class="fences-type-media">
                 <img src="./assets/fence-chainlink.jpeg" alt="Забор из сетки рабицы" />
               </div>
@@ -167,10 +166,10 @@
                   <div><dt>Монтаж</dt><dd>быстрый</dd></div>
                   <div><dt>Задача</dt><dd>периметр</dd></div>
                 </dl>
-                <a href="#fences-contact">Рассчитать</a>
+                <button class="fences-type-open" type="button">Подробнее</button>
               </div>
             </article>
-            <article class="fences-type-card">
+            <article class="fences-type-card" data-fence-detail="combined">
               <div class="fences-type-media">
                 <img src="./assets/fence-profile-brick-posts.png" alt="Комбинированный забор с кирпичными столбами" />
               </div>
@@ -183,12 +182,48 @@
                   <div><dt>Вид</dt><dd>индивидуальный</dd></div>
                   <div><dt>Смета</dt><dd>под проект</dd></div>
                 </dl>
-                <a href="#fences-contact">Рассчитать</a>
+                <button class="fences-type-open" type="button">Подробнее</button>
               </div>
             </article>
           </div>
         </div>
       </section>
+
+      <div class="fence-detail-modal" data-fence-modal aria-hidden="true">
+        <div class="fence-detail-backdrop" data-fence-close></div>
+        <section class="fence-detail-panel" role="dialog" aria-modal="true" aria-labelledby="fence-detail-title" tabindex="-1">
+          <button class="fence-detail-close" type="button" data-fence-close aria-label="Закрыть подробности"></button>
+          <div class="fence-detail-media">
+            <img data-fence-modal-image src="./assets/fence-profile-gate-wicket.png" alt="" />
+            <span data-fence-modal-tag></span>
+            <div class="fence-detail-thumbs" data-fence-modal-thumbs aria-label="Фотографии забора"></div>
+          </div>
+          <div class="fence-detail-content">
+            <span class="fences-kicker" data-fence-modal-kicker></span>
+            <h2 id="fence-detail-title" data-fence-modal-title></h2>
+            <p class="fence-detail-lead" data-fence-modal-lead></p>
+            <p class="fence-detail-text" data-fence-modal-text></p>
+
+            <div class="fence-detail-specs" data-fence-modal-specs></div>
+
+            <div class="fence-detail-columns">
+              <div>
+                <h3>Что важно</h3>
+                <ul data-fence-modal-points></ul>
+              </div>
+              <div>
+                <h3>Входит в монтаж</h3>
+                <ul data-fence-modal-included></ul>
+              </div>
+            </div>
+
+            <div class="fence-detail-actions">
+              <a class="fences-button" href="#fences-contact" data-fence-close>Заказать расчет</a>
+              <a class="fences-button fences-button-muted" href="#fences-contact" data-fence-close>Вызвать замерщика</a>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <section class="fences-materials">
         <div class="container fences-materials-grid">
@@ -295,7 +330,7 @@
         <div class="footer-main">
           <div class="footer-brand">
             <div class="footer-brand-row">
-              <img class="footer-logo" src="./assets/site-logo.webp" alt="Логотип компании" />
+              <img class="footer-logo" src="./assets/site-logo-new.png" alt="Логотип компании" />
               <strong>Сити Заборы</strong>
             </div>
             <p>
@@ -332,6 +367,6 @@
         </div>
       </div>
     </footer>
-    <script src="./assets/site-effects.js?v=20260608-effects"></script>
+    <script src="./assets/site-effects.js?v=20260617-gates-canopies-2"></script>
   </body>
 </html>

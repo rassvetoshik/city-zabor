@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@300;400;600&amp;family=Public+Sans:wght@300;400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Noto+Serif:wght@100..900&amp;family=Public+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#f9e37a",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f2f0f1",
+                        "tertiary-container": "#bfab49",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "outline-variant": "#c3c6d5",
+                        "on-surface-variant": "#434653",
+                        "primary": "#094cb2",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed": "#211b00",
+                        "on-tertiary-container": "#4a3f00",
+                        "primary-fixed": "#d9e2ff",
+                        "surface-container-high": "#e9e8e9",
+                        "surface-container-low": "#f5f3f4",
+                        "surface-container": "#efedee",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#171c20",
+                        "tertiary": "#6d5e00",
+                        "surface-tint": "#2259bf",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#dcc661",
+                        "surface": "#faf9fa",
+                        "secondary": "#5a5f63",
+                        "on-primary-fixed-variant": "#00419d",
+                        "surface-container-highest": "#e3e2e3",
+                        "on-primary-fixed": "#001946",
+                        "surface-dim": "#dbdadb",
+                        "secondary-fixed": "#dfe3e8",
+                        "on-secondary-container": "#606569",
+                        "inverse-surface": "#303031",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#3366cc",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#42474b",
+                        "on-primary-container": "#e7ebff",
+                        "background": "#faf9fa",
+                        "on-tertiary-fixed-variant": "#524600",
+                        "outline": "#737784",
+                        "inverse-primary": "#b1c5ff",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#c2c7cc",
+                        "on-surface": "#1b1c1d",
+                        "on-background": "#1b1c1d",
+                        "surface-bright": "#faf9fa",
+                        "surface-variant": "#e3e2e3",
+                        "secondary-container": "#dfe3e8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "display": ["Noto Serif"],
+                        "body": ["Inter"],
+                        "label": ["Public Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .label-text { font-family: 'Public Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-sm px-12 py-6 flex justify-between items-center max-w-full mx-auto">
+<div class="font-headline text-2xl font-bold text-on-surface tracking-tight cursor-pointer active:scale-95 transition-transform">
+            Alexandria
+        </div>
+<div class="hidden md:flex gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors label-text text-sm tracking-wide" href="#">Fences</a>
+<a class="text-primary border-b-2 border-primary pb-1 label-text text-sm tracking-wide" href="#">Gates</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors label-text text-sm tracking-wide" href="#">Canopies</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors label-text text-sm tracking-wide" href="#">Industrial</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-on-surface-variant hover:text-primary transition-all duration-300 label-text text-sm">Portfolio</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label text-sm font-semibold active:scale-95 transition-transform">Consultation</button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[90vh] flex items-center px-12 overflow-hidden bg-surface-container-lowest">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full max-w-7xl mx-auto">
+<div class="z-10">
+<span class="label-text text-tertiary font-semibold uppercase tracking-widest text-xs mb-4 block">Архитектурные решения</span>
+<h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6 text-on-surface">
+                        Ворота как <br/><span class="italic text-primary">искусство</span> безопасности
+                    </h1>
+<p class="text-on-surface-variant text-lg max-w-md mb-10 leading-relaxed">
+                        Безупречное сочетание индустриальной прочности и эстетической утонченности. Мы создаем входные группы, которые определяют статус вашего пространства.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl flex items-center gap-3 transition-transform active:scale-95">
+<span class="font-semibold">Обсудить проект</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="relative h-full min-h-[400px]">
+<div class="absolute inset-0 bg-surface-container-high rounded-3xl overflow-hidden shadow-2xl">
+<img alt="" class="w-full h-full object-cover" data-alt="A professional photograph of high-end industrial sliding gates made of sleek black metal with a modern mechanism. The setting is an architecturally significant modern home at dusk, with soft accent lighting highlighting the texture of the metalwork. The atmosphere is premium and secure, reflecting a scholarly and refined editorial style with clean lines and balanced composition." src="https://lh3.googleusercontent.com/aida/AP1WRLuRoKMrxosgvvN69mDXFdHnBtjwgqg3NfHai7my90sB26FrxgQpm2ZPTwmCs2DcILurORmHJKi87UT7-P94lBHMpaFL-W7FV-U37mjdYc67T0s6DP8qFr_ii9-7ZRgbYIsvEt3w3WlRnf2tDOOUI5oAOkSbl8sJH1zTD-b8V8hy5NajfLxH87HvY057IcCwONcN61zoBR25ZQk_jhFH92YIQXvssNBwGebTHVaazmVuu_qu1J5eoCyl7Ec"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-surface p-6 rounded-2xl shadow-xl glass-nav">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<div>
+<div class="text-sm font-bold">Гарантия 15 лет</div>
+<div class="text-xs text-on-surface-variant">На конструктив и покрытие</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Excellence (Bento Grid) -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="text-4xl font-bold mb-4">Технологическое превосходство</h2>
+<p class="text-on-surface-variant max-w-xl">Каждая деталь проектируется с учетом экстремальных нагрузок и эстетических требований современной архитектуры.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Feature 1 -->
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-3xl flex flex-col justify-between transition-all hover:bg-white">
+<div>
+<div class="mb-8 text-primary">
+<span class="material-symbols-outlined text-4xl">precision_manufacturing</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Автоматизация CAME &amp; Nice</h3>
+<p class="text-on-surface-variant leading-relaxed">Интеграция ведущих итальянских систем привода. Плавный ход, бесшумная работа и интеллектуальное управление со смартфона. Мы обеспечиваем полную интеграцию в систему "Умный дом".</p>
+</div>
+<div class="mt-8 flex gap-4 overflow-hidden opacity-40">
+<span class="label-text font-bold text-xl tracking-tighter">CAME</span>
+<span class="label-text font-bold text-xl tracking-tighter">NICE</span>
+<span class="label-text font-bold text-xl tracking-tighter">FAAC</span>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-primary text-on-primary p-10 rounded-3xl transition-transform hover:scale-[1.02]">
+<span class="material-symbols-outlined text-4xl mb-6">shield</span>
+<h3 class="text-2xl font-bold mb-4">Безопасность Grade A</h3>
+<p class="text-on-primary-container/80 text-sm leading-relaxed mb-6">Датчики препятствий, системы анти-взлома и усиленные ригельные группы обеспечивают непревзойденный уровень защиты вашего владения.</p>
+<ul class="space-y-3 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Фотоэлементы безопасности</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Сигнальные лампы</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Удаленный мониторинг</li>
+</ul>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-highest p-10 rounded-3xl">
+<h3 class="text-xl font-bold mb-4">Материалы</h3>
+<div class="space-y-6">
+<div class="flex justify-between items-end border-b border-outline-variant/30 pb-2">
+<span class="label-text text-sm">Легированная сталь</span>
+<span class="text-xs text-primary font-bold">ГОСТ 380-2005</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/30 pb-2">
+<span class="label-text text-sm">Алюминиевый профиль</span>
+<span class="text-xs text-primary font-bold">ALMG3</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant/30 pb-2">
+<span class="label-text text-sm">Покрытие</span>
+<span class="text-xs text-primary font-bold">AkzoNobel</span>
+</div>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="md:col-span-2 relative rounded-3xl overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-r from-on-surface to-transparent z-10 opacity-70"></div>
+<img alt="" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A macro shot of professional metal welding sparks and precision craftsmanship in a high-end architectural workshop. The lighting is moody with dark shadows and bright blue electric arcs, highlighting the raw material and industrial process. The focus is on a master craftsman working on a bespoke gate component, capturing the essence of premium architectural metalwork." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWM6qm9QWrsvAUsXDr5rGCQVe609YvazhTy4a3eyAOXVOflH4X3-T6W7iUPIUF_T8QeHEvrzdEUDIRQyez_Q8e-beuJHbTGUz93bx45K9HYyxPm6yat18buxBWRgDJ_qyShd26sgF8rQ4udNVPA1Xx6ytk8rLZaO7IwBVR3hQNPjaVriDIPzCPUnBozxfz3gAjZWvOfUa4LNe2EKsIeajJVAtbhZOxwYURjoePPYLz9hLfTJKPu07EnFyVjnrgRcoadXE5HpqMWsI"/>
+<div class="absolute bottom-10 left-10 z-20">
+<h3 class="text-white text-3xl font-bold mb-2">Цеховая сборка</h3>
+<p class="text-white/70 max-w-sm">Точность до 0.5 мм благодаря лазерной резке и роботизированной сварке.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery / Showcase -->
+<section class="py-32 px-12 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="label-text text-tertiary font-semibold uppercase tracking-widest text-xs mb-4 block">Портфолио</span>
+<h2 class="text-4xl font-bold">Избранные проекты</h2>
+</div>
+<button class="text-primary font-semibold flex items-center gap-2 hover:underline decoration-tertiary">
+                        Смотреть все работы <span class="material-symbols-outlined">arrow_right_alt</span>
+</button>
+</div>
+<div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+<div class="break-inside-avoid bg-surface-container-high rounded-2xl overflow-hidden">
+<img alt="" class="w-full grayscale hover:grayscale-0 transition-all duration-500" data-alt="Minimalist modern gate installation for a luxury villa, featuring horizontal slats in dark charcoal finish. The gate is integrated into a concrete wall with lush green Mediterranean landscaping. High-end editorial style, clean morning lighting, focus on textural contrast between metal and stone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfzliq1cV-I8T1nFKqk_e6vS_pXQAUbgQB2XOxaFCNOne68NR6KvEjAs0elHowUeEscv5QWkETiR6nQuesR1qyVXV8csbO_KMhu2Sakw9KL9wC1b7LUd9-icpaVoSx6rHJ1BQ4C7_rDwQx_yEW6bg3Zt39tWbqfMlHEibFt1bESFpnmMav3pJfyDYWHqAgXbT_67ynNC9iaSgdYlEb5CY-ZiDB2HjwnVPYniFWYVdRXTrVHUsStBTyM8mb5ZB4aoTcbHKEAL_rkOE"/>
+<div class="p-6">
+<h4 class="font-bold">Вилла "Орион"</h4>
+<p class="text-xs label-text text-on-surface-variant uppercase mt-1">Откатные • Алюминий</p>
+</div>
+</div>
+<div class="break-inside-avoid bg-surface-container-high rounded-2xl overflow-hidden">
+<img alt="" class="w-full grayscale hover:grayscale-0 transition-all duration-500" data-alt="Traditional wrought iron gates with intricate gold leaf details, guarding a historic estate driveway. The lighting is warm golden hour, emphasizing the artisanal craftsmanship and archival feel. Premium editorial photography with deep depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqA-l320-E4Ix-k_ObgDLajgcJ2bjTs3zNsZ4bF2oNv4qAKPbf0Bb6W_ALUfq_db-5HnicHigjCsT9SFk20l2rKnTfNeLiD6SsPER1cs0EecTbmEvemDjLKLc51W2kQmy-cOPCwyqvNrm9DavGOSgA3dKB0UGR7cTlrehybERaeCTqtAVTQMxJF2SJY_KQ9X1O-jI_-Mnba3p-Vgyi5ESiqa9lWYcwby3IjofRCBDiWMcrj7yStN556qZjLvekHpeNW5tTY6gm26s"/>
+<div class="p-6">
+<h4 class="font-bold">Усадьба "Архангельское"</h4>
+<p class="text-xs label-text text-on-surface-variant uppercase mt-1">Распашные • Ковка</p>
+</div>
+</div>
+<div class="break-inside-avoid bg-surface-container-high rounded-2xl overflow-hidden">
+<img alt="" class="w-full grayscale hover:grayscale-0 transition-all duration-500" data-alt="High-tech industrial gates for a corporate headquarters, featuring frosted glass panels and stainless steel frames. Modern lighting strips integrated into the structure. Clean, cool-toned professional photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6ijyUTb1o0CzZh5z6HThmF8bX0Tr8sUq8CdKv4SKBfetXZFC94hIqSC5-zXCSu2Y0CGDPoR0GKVyLa9Ce8tqEnNRb6G4Uv6_nea0gAK_dy1Y829NuXIa5nU_hGVMxdpDUPxu3Q5PL9f99bZtIR9aUSaEZzhGhHADG6mLmmny31wIS4Sy5_Hoh_YSc0AE18KK2G3EndJJhjFqF6Q75-pTmN9iPPbsrshbQbujK5dpshMzisKOL4wQH-ou7Xt5ZBc-fGhSWtS9tRC8"/>
+<div class="p-6">
+<h4 class="font-bold">Бизнес-центр "Кристалл"</h4>
+<p class="text-xs label-text text-on-surface-variant uppercase mt-1">Секционные • Сталь/Стекло</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bespoke Consultation Form -->
+<section class="py-32 px-12 bg-surface-dim">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20">
+<div class="flex-1">
+<h2 class="text-5xl font-bold mb-8 leading-tight">Готовы обсудить <br/>ваш проект?</h2>
+<p class="text-on-surface-variant text-lg mb-12">
+                        Наши эксперты помогут подобрать идеальное решение, учитывая архитектурный стиль вашего дома и технические особенности ландшафта.
+                    </p>
+<div class="space-y-8">
+<div class="flex items-start gap-6">
+<div class="text-primary"><span class="material-symbols-outlined text-3xl">architecture</span></div>
+<div>
+<h4 class="font-bold mb-1">Архитектурный надзор</h4>
+<p class="text-sm text-on-surface-variant">Сопровождаем проект от эскиза до монтажа.</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<div class="text-primary"><span class="material-symbols-outlined text-3xl">history_edu</span></div>
+<div>
+<h4 class="font-bold mb-1">Юридическая чистота</h4>
+<p class="text-sm text-on-surface-variant">Работаем по договору с четкими сроками.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1 bg-surface-container-lowest p-12 rounded-[2rem] shadow-xl">
+<form class="space-y-6">
+<div class="grid grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="label-text text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Имя</label>
+<input class="bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="Александр" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="label-text text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Телефон</label>
+<input class="bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary outline-none transition-all" placeholder="+7 (900) 000-00-00" type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="label-text text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Тип ворот</label>
+<select class="bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary outline-none transition-all appearance-none">
+<option>Откатные (Сдвижные)</option>
+<option>Распашные</option>
+<option>Секционные</option>
+<option>Индустриальные</option>
+</select>
+</div>
+<div class="flex flex-col gap-2">
+<label class="label-text text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Ваши пожелания</label>
+<textarea class="bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary outline-none transition-all resize-none" placeholder="Опишите ваши требования или задайте вопрос..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-2xl font-bold text-lg hover:shadow-lg transition-all active:scale-[0.98]">
+                            Получить консультацию
+                        </button>
+<p class="text-[10px] text-center text-on-surface-variant uppercase tracking-widest leading-relaxed">
+                            Нажимая кнопку, вы соглашаетесь с Политикой Конфиденциальности и условиями обработки данных.
+                        </p>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full py-16 bg-surface-container-lowest dark:bg-surface-dim flex flex-col md:flex-row justify-between items-start px-12 gap-8 border-t-0">
+<div class="flex flex-col gap-4">
+<div class="font-headline text-xl font-semibold text-on-surface">Alexandria</div>
+<p class="font-body text-on-surface-variant max-w-xs text-sm">Куратор архитектурных решений из металла. От эскиза до безупречного воплощения.</p>
+</div>
+<div class="flex flex-wrap gap-x-16 gap-y-8">
+<div class="flex flex-col gap-4">
+<span class="label-text text-xs font-bold text-primary uppercase tracking-widest">Компания</span>
+<a class="text-on-surface-variant/70 hover:text-on-surface transition-colors label-text text-sm" href="#">Portfolio</a>
+<a class="text-on-surface-variant/70 hover:text-on-surface transition-colors label-text text-sm" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="label-text text-xs font-bold text-primary uppercase tracking-widest">Сервис</span>
+<a class="text-on-surface-variant/70 hover:text-on-surface transition-colors label-text text-sm" href="#">Maintenance Guide</a>
+<a class="text-on-surface-variant/70 hover:text-on-surface transition-colors label-text text-sm" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="label-text text-xs font-bold text-primary uppercase tracking-widest">Правовая информация</span>
+<a class="text-on-surface-variant/70 hover:text-on-surface transition-colors label-text text-sm" href="#">Privacy Policy</a>
+</div>
+</div>
+<div class="w-full md:w-auto mt-8 md:mt-0 pt-8 md:pt-0 border-t border-outline-variant/30 md:border-none">
+<p class="font-body text-on-surface-variant text-xs">© 2024 Alexandria Architectural Metalworks. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Smooth scroll interaction for the navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple parallax effect for hero image
+        window.addEventListener('scroll', () => {
+            const scroll = window.pageYOffset;
+            const heroImg = document.querySelector('section img');
+            if(heroImg) {
+                heroImg.style.transform = `translateY(${scroll * 0.1}px)`;
+            }
+        });
+    </script>
+</body></html>
