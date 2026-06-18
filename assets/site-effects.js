@@ -98,7 +98,7 @@
     window.setTimeout(openQuiz, 20000);
   };
 
-  createMeasureQuiz();
+  // Quiz popup is intentionally disabled.
 
   const fenceDetails = {
     picket: {
