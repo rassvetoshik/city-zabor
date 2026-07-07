@@ -1094,24 +1094,15 @@ textarea {
 
 .materials-logos {
   display: flex;
-  flex-wrap: nowrap;
-  gap: clamp(10px, 1.4vw, 20px);
+  flex-wrap: wrap;
+  gap: 24px;
   align-items: center;
-  justify-content: space-between;
-  overflow-x: auto;
-  padding-bottom: 4px;
-  scrollbar-width: none;
-}
-
-.materials-logos::-webkit-scrollbar {
-  display: none;
 }
 
 .materials-logos img {
   width: auto;
-  max-width: clamp(92px, 8.8vw, 148px);
-  height: clamp(34px, 3vw, 44px);
-  flex: 0 1 auto;
+  max-width: 180px;
+  height: 48px;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -1450,12 +1441,7 @@ textarea {
   gap: 12px;
 }
 
-.repair-send {
-  position: relative;
-  width: fit-content;
-}
-
-.repair-send summary {
+.repair-contact a {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
@@ -1463,60 +1449,7 @@ textarea {
   border-radius: var(--radius-sm);
   background: var(--primary);
   color: var(--white);
-  cursor: pointer;
   font-weight: 700;
-  list-style: none;
-}
-
-.repair-send summary::-webkit-details-marker {
-  display: none;
-}
-
-.repair-send summary::after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  margin-left: 10px;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: rotate(45deg) translateY(-2px);
-  transition: transform 0.2s ease;
-}
-
-.repair-send[open] summary::after {
-  transform: rotate(225deg) translateY(-1px);
-}
-
-.repair-send div {
-  position: absolute;
-  left: 0;
-  bottom: calc(100% + 10px);
-  z-index: 5;
-  display: grid;
-  min-width: 220px;
-  gap: 8px;
-  padding: 10px;
-  border: 1px solid rgba(9, 76, 178, 0.1);
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 18px 48px rgba(17, 18, 22, 0.14);
-}
-
-.repair-send a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 42px;
-  padding: 0 14px;
-  border-radius: 10px;
-  background: #eef3fb;
-  color: var(--primary);
-  font-weight: 800;
-}
-
-.repair-send a:hover,
-.repair-send a:focus-visible {
-  background: var(--primary);
-  color: var(--white);
 }
 
 .calculator-card {
@@ -4107,12 +4040,28 @@ textarea {
 }
 
 .canopies-catalog-page .fences-hero-copy {
-  max-width: 680px;
+  max-width: 520px;
+}
+
+.canopies-catalog-page .fences-hero-grid {
+  grid-template-columns: minmax(420px, 0.9fr) minmax(0, 1.1fr);
 }
 
 .canopies-catalog-page .fences-hero-copy h1 {
-  max-width: 640px;
-  font-size: clamp(2.8rem, 4vw, 4.7rem);
+  max-width: 11ch;
+  font-size: clamp(2.6rem, 3vw, 3.85rem);
+}
+
+.canopies-catalog-page .fences-materials h2 {
+  max-width: 560px;
+  font-size: clamp(2.2rem, 3vw, 3.55rem);
+  line-height: 1.05;
+}
+
+@media (max-width: 1100px) {
+  .canopies-catalog-page .fences-hero-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .fences-hero-copy p,
@@ -4889,6 +4838,64 @@ body.is-fence-modal-open {
   color: var(--text);
   padding: 14px 16px;
   outline: none;
+}
+
+.canopy-brief-form {
+  align-content: start;
+}
+
+.canopy-brief-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.canopy-brief-result {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid rgba(9, 76, 178, 0.14);
+  border-radius: 14px;
+  background: #f1f5fb;
+}
+
+.canopy-brief-result[hidden] {
+  display: none;
+}
+
+.canopy-brief-result strong {
+  color: var(--text);
+  font-family: "Noto Serif", serif;
+  font-size: 1.2rem;
+}
+
+.canopy-brief-result > span {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.canopy-brief-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.canopy-brief-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--primary);
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .product-tile,
@@ -6179,6 +6186,11 @@ body.is-measure-quiz-open {
 
   .fences-form {
     padding: 24px;
+  }
+
+  .canopy-brief-row,
+  .canopy-brief-actions {
+    grid-template-columns: 1fr;
   }
 
   .fences-specs {
