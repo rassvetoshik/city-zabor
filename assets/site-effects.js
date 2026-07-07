@@ -105,13 +105,13 @@
       kicker: "металлический штакетник",
       title: "Металлический штакетник",
       tag: "открытый фасад участка",
-      image: "./assets/fence-gallery/picket-01.jpg",
+      image: "./assets/fence-gallery/picket-01.webp",
       imageAlt: "Забор из металлического штакетника",
       gallery: [
         { src: "./assets/fence-piles-profile-or-picket.png", alt: "Забор из металлического штакетника" },
-        { src: "./assets/fence-gallery/picket-01.jpg", alt: "Металлический штакетник на участке" },
-        { src: "./assets/fence-gallery/picket-02.jpg", alt: "Коричневый забор из металлического штакетника" },
-        { src: "./assets/fence-gallery/picket-03.jpg", alt: "Металлический штакетник с воротами" }
+        { src: "./assets/fence-gallery/picket-01.webp", alt: "Металлический штакетник на участке" },
+        { src: "./assets/fence-gallery/picket-02.webp", alt: "Коричневый забор из металлического штакетника" },
+        { src: "./assets/fence-gallery/picket-03.webp", alt: "Металлический штакетник с воротами" }
       ],
       lead: "Аккуратный металлический забор для участков, где важны свет, продуваемость и визуально легкая линия.",
       text: "Штакетник собирается из отдельных планок на металлическом каркасе. Можно выбрать одностороннюю установку с зазором или шахматку, когда обзор перекрывается сильнее, но участок остается проветриваемым. Хорошо подходит для фасадной стороны дома, дачи и длинных периметров.",
@@ -166,12 +166,12 @@
       kicker: "премиум-секции",
       title: "Заборы-жалюзи",
       tag: "приватность и вентиляция",
-      image: "./assets/fence-gallery/louver-01.jpeg",
+      image: "./assets/fence-gallery/louver-01.webp",
       imageAlt: "Забор-жалюзи серого цвета",
       gallery: [
-        { src: "./assets/fence-louver-gray.jpeg", alt: "Серый забор-жалюзи" },
-        { src: "./assets/fence-louver-brown.jpeg", alt: "Коричневый забор-жалюзи" },
-        { src: "./assets/fence-gallery/louver-01.jpeg", alt: "Забор-жалюзи с декоративным покрытием" }
+        { src: "./assets/fence-louver-gray.webp", alt: "Серый забор-жалюзи" },
+        { src: "./assets/fence-louver-brown.webp", alt: "Коричневый забор-жалюзи" },
+        { src: "./assets/fence-gallery/louver-01.webp", alt: "Забор-жалюзи с декоративным покрытием" }
       ],
       lead: "Современное ограждение с ламелями, которое закрывает прямой обзор, но сохраняет движение воздуха.",
       text: "Ламели устанавливаются под углом, поэтому забор выглядит монолитно с улицы и при этом не работает как полностью глухая стена. Такое решение часто выбирают для современных домов, фасадной линии участка и зон, где важен аккуратный внешний вид.",
@@ -196,11 +196,11 @@
       kicker: "ранчо",
       title: "Забор ранчо",
       tag: "легкая горизонталь",
-      image: "./assets/fence-rancho.jpg",
+      image: "./assets/fence-rancho.webp",
       imageAlt: "Горизонтальный забор ранчо",
       gallery: [
-        { src: "./assets/fence-rancho.jpg", alt: "Забор ранчо" },
-        { src: "./assets/fence-gallery/ranch-02-custom.jpg", alt: "Современный забор ранчо у частного дома" }
+        { src: "./assets/fence-rancho.webp", alt: "Забор ранчо" },
+        { src: "./assets/fence-gallery/ranch-02-custom.webp", alt: "Современный забор ранчо у частного дома" }
       ],
       lead: "Открытый горизонтальный забор для обозначения границ, сада, фасадной зоны или участка в загородном стиле.",
       text: "Ранчо не закрывает участок полностью, зато делает периметр визуально легким и дружелюбным. Его выбирают там, где важнее архитектурная линия и зонирование, чем полная приватность. В металле такой забор долговечнее деревянного и проще в уходе.",
@@ -225,12 +225,12 @@
       kicker: "сетка рабица",
       title: "Забор из сетки рабицы",
       tag: "экономичный периметр",
-      image: "./assets/fence-gallery/chainlink-01.jpg",
+      image: "./assets/fence-gallery/chainlink-01.webp",
       imageAlt: "Забор из сетки рабицы",
       gallery: [
-        { src: "./assets/fence-chainlink.jpeg", alt: "Забор из сетки рабицы" },
-        { src: "./assets/fence-gallery/chainlink-01.jpg", alt: "Забор из сетки рабицы вдоль участка" },
-        { src: "./assets/fence-gallery/chainlink-03.jpg", alt: "Забор из сетки для дачного участка" }
+        { src: "./assets/fence-chainlink.webp", alt: "Забор из сетки рабицы" },
+        { src: "./assets/fence-gallery/chainlink-01.webp", alt: "Забор из сетки рабицы вдоль участка" },
+        { src: "./assets/fence-gallery/chainlink-03.webp", alt: "Забор из сетки для дачного участка" }
       ],
       lead: "Самый простой способ обозначить границы участка, закрыть хозяйственную зону или поставить недорогой дачный периметр.",
       text: "Рабица остается открытой для света и воздуха, поэтому ее часто ставят на дачах, между соседними участками и на временных или технических линиях. Конструкция может быть без протяжек, с одной или двумя протяжками, а также в секционном исполнении.",
@@ -255,12 +255,12 @@
       kicker: "индивидуальный проект",
       title: "Комбинированный забор",
       tag: "металл, кирпич и декоративные покрытия",
-      image: "./assets/fence-gallery/combined-01.jpg",
+      image: "./assets/fence-gallery/combined-01.webp",
       imageAlt: "Комбинированный забор с кирпичными столбами",
       gallery: [
         { src: "./assets/fence-profile-brick-posts.png", alt: "Комбинированный забор с кирпичными столбами" },
-        { src: "./assets/fence-gallery/combined-01.jpg", alt: "Комбинированный забор с кирпичными столбами" },
-        { src: "./assets/fence-gallery/combined-03.jpg", alt: "Комбинированный забор с воротами" }
+        { src: "./assets/fence-gallery/combined-01.webp", alt: "Комбинированный забор с кирпичными столбами" },
+        { src: "./assets/fence-gallery/combined-03.webp", alt: "Комбинированный забор с воротами" }
       ],
       lead: "Решение под архитектуру дома: металлическое заполнение, кирпичные или усиленные столбы, декоративные покрытия и ворота в одном стиле.",
       text: "Комбинированный забор собирается под конкретный участок: можно сделать глухое заполнение из профнастила, более легкий штакетник, жалюзи или секции, а несущую часть усилить кирпичными столбами и фундаментом. Такой вариант чаще выбирают для фасада и въездной группы.",
@@ -285,12 +285,12 @@
       kicker: "откатные ворота",
       title: "Откатные ворота",
       tag: "комфортный въезд без распахивания",
-      image: "./assets/gates-gallery/sliding-proftruba.jpg",
+      image: "./assets/gates-gallery/sliding-proftruba.webp",
       imageAlt: "Откатные ворота из профильной трубы",
       gallery: [
-        { src: "./assets/gates-gallery/sliding-proftruba.jpg", alt: "Откатные ворота из профильной трубы" },
-        { src: "./assets/gates-gallery/sliding-proflist.jpg", alt: "Откатные ворота с заполнением профлистом" },
-        { src: "./assets/gates-gallery/sliding-picket.jpg", alt: "Откатные ворота с металлическим штакетником" }
+        { src: "./assets/gates-gallery/sliding-proftruba.webp", alt: "Откатные ворота из профильной трубы" },
+        { src: "./assets/gates-gallery/sliding-proflist.webp", alt: "Откатные ворота с заполнением профлистом" },
+        { src: "./assets/gates-gallery/sliding-picket.webp", alt: "Откатные ворота с металлическим штакетником" }
       ],
       lead: "Полотно сдвигается вдоль линии забора и не занимает место перед въездом.",
       text: "Откатные ворота подходят для частных домов, дач и коттеджей, где важно удобно заезжать зимой и не чистить зону распахивания створок. Конструкцию изготавливаем под ширину проема, подбираем заполнение под забор и заранее закладываем место под автоматику.",
@@ -315,11 +315,11 @@
       kicker: "распашные ворота",
       title: "Распашные ворота",
       tag: "простая и надежная классика",
-      image: "./assets/gates-gallery/swing-proftruba.jpg",
+      image: "./assets/gates-gallery/swing-proftruba.webp",
       imageAlt: "Распашные ворота из профильной трубы",
       gallery: [
-        { src: "./assets/gates-gallery/swing-proftruba.jpg", alt: "Распашные ворота из профильной трубы" },
-        { src: "./assets/gates-gallery/swing-picket-house.jpg", alt: "Распашные ворота с вертикальным заполнением у дома" }
+        { src: "./assets/gates-gallery/swing-proftruba.webp", alt: "Распашные ворота из профильной трубы" },
+        { src: "./assets/gates-gallery/swing-picket-house.webp", alt: "Распашные ворота с вертикальным заполнением у дома" }
       ],
       lead: "Две створки на усиленных петлях открываются внутрь или наружу участка.",
       text: "Распашные ворота выбирают, когда участок позволяет свободно открывать створки. Это понятная, ремонтопригодная конструкция для дачи и частного дома. Створки можно усилить рамой, дополнить стопорами, замком, калиткой и автоматикой.",
@@ -349,7 +349,7 @@
       gallery: [
         { src: "./assets/fence-profile-gate-wicket.png", alt: "Ворота и калитка из профнастила" },
         { src: "./assets/gates-project-orion-stitch.webp", alt: "Современная въездная группа с воротами" },
-        { src: "./assets/gates-gallery/sliding-picket.jpg", alt: "Ворота и калитка из металлического штакетника" }
+        { src: "./assets/gates-gallery/sliding-picket.webp", alt: "Ворота и калитка из металлического штакетника" }
       ],
       lead: "Калитку можно встроить в полотно ворот или поставить рядом отдельным элементом.",
       text: "Такой формат экономит место и помогает собрать въездную группу в едином стиле. Для встроенной калитки особенно важна жесткость полотна, правильное расположение перемычек, ручка, замок и доводчик по задаче.",
@@ -378,8 +378,8 @@
       imageAlt: "Навес для автомобиля",
       gallery: [
         { src: "./assets/canopy.webp", alt: "Навес для автомобиля у дома" },
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Металлический навес для нескольких автомобилей" },
-        { src: "./assets/portfolio-canopy-blue.jpg", alt: "Двускатный навес для автомобиля" }
+        { src: "./assets/hero-canopy-evening.webp", alt: "Металлический навес для нескольких автомобилей" },
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Двускатный навес для автомобиля" }
       ],
       lead: "Металлический навес защищает автомобиль от дождя, снега, града, солнца и наледи.",
       text: "Конструкция подбирается под количество автомобилей, размеры участка, расположение дома, гаража и ворот. Каркас обычно делают из профильной трубы, а кровлю выбирают из поликарбоната, профнастила, металлочерепицы, мягкой или фальцевой кровли.",
@@ -404,12 +404,12 @@
       kicker: "навес для дачи",
       title: "Навес для дачи",
       tag: "универсальное решение для участка",
-      image: "./assets/portfolio-canopy-blue.jpg",
+      image: "./assets/portfolio-canopy-blue.webp",
       imageAlt: "Навес для дачи",
       gallery: [
-        { src: "./assets/portfolio-canopy-blue.jpg", alt: "Навес для дачи и автомобиля" },
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Навес для дачи и автомобиля" },
         { src: "./assets/canopy.webp", alt: "Металлический навес на участке" },
-        { src: "./assets/portfolio-canopy-evening.jpg", alt: "Навес для зоны отдыха" }
+        { src: "./assets/portfolio-canopy-evening.webp", alt: "Навес для зоны отдыха" }
       ],
       lead: "Навес для дачи закрывает автомобиль, зону отдыха, вход, террасу или хозяйственную площадку.",
       text: "Его можно поставить отдельно во дворе, рядом с домом, возле ворот или над проходной зоной. Размеры подбираются по фактической площади: для одного автомобиля часто используют ширину от 3 м и длину от 5-6 м.",
@@ -434,11 +434,11 @@
       kicker: "навес к дому",
       title: "Навес к дому",
       tag: "примыкание к фасаду",
-      image: "./assets/hero-canopy-evening.jpg",
+      image: "./assets/hero-canopy-evening.webp",
       imageAlt: "Навес к дому",
       gallery: [
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Навес к дому для автомобилей" },
-        { src: "./assets/portfolio-canopy-evening.jpg", alt: "Навес рядом с фасадом дома" },
+        { src: "./assets/hero-canopy-evening.webp", alt: "Навес к дому для автомобилей" },
+        { src: "./assets/portfolio-canopy-evening.webp", alt: "Навес рядом с фасадом дома" },
         { src: "./assets/canopy.webp", alt: "Пристенный металлический навес" }
       ],
       lead: "Навес к дому устанавливается рядом с фасадом и закрывает парковку, крыльцо, проход, террасу или зону отдыха.",
@@ -464,12 +464,12 @@
       kicker: "навес для террасы",
       title: "Навес для террасы",
       tag: "крытая зона отдыха",
-      image: "./assets/portfolio-canopy-evening.jpg",
+      image: "./assets/portfolio-canopy-evening.webp",
       imageAlt: "Навес для террасы",
       gallery: [
-        { src: "./assets/portfolio-canopy-evening.jpg", alt: "Навес для террасы у дома" },
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Навес для зоны отдыха" },
-        { src: "./assets/portfolio-canopy-blue.jpg", alt: "Металлический навес для двора" }
+        { src: "./assets/portfolio-canopy-evening.webp", alt: "Навес для террасы у дома" },
+        { src: "./assets/hero-canopy-evening.webp", alt: "Навес для зоны отдыха" },
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Металлический навес для двора" }
       ],
       lead: "Навес для террасы закрывает зону отдыха от осадков и солнца.",
       text: "Подходит для крыльца, летней кухни, мангальной зоны, патио или прохода вдоль дома. Каркас может быть металлическим или комбинированным, а кровля - из поликарбоната, металлочерепицы, мягкой кровли или фальца.",
@@ -498,8 +498,8 @@
       imageAlt: "Навес с хозблоком",
       gallery: [
         { src: "./assets/canopy.webp", alt: "Навес с закрытой хозяйственной частью" },
-        { src: "./assets/portfolio-canopy-blue.jpg", alt: "Навес для машины с хозяйственной зоной" },
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Крупный навес у дома" }
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Навес для машины с хозяйственной зоной" },
+        { src: "./assets/hero-canopy-evening.webp", alt: "Крупный навес у дома" }
       ],
       lead: "Навес с хозблоком объединяет парковочное место и закрытое помещение для хранения.",
       text: "Хозблок можно разместить сбоку или в торце конструкции. Внутри обычно хранят инструмент, колеса, садовую технику, велосипеды и хозяйственный инвентарь.",
@@ -524,11 +524,11 @@
       kicker: "навес над входом",
       title: "Навес над входом",
       tag: "защита крыльца",
-      image: "./assets/hero-canopy-evening.jpg",
+      image: "./assets/hero-canopy-evening.webp",
       imageAlt: "Навес над входом",
       gallery: [
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Навес над входной группой" },
-        { src: "./assets/portfolio-canopy-evening.jpg", alt: "Козырек и навес у дома" },
+        { src: "./assets/hero-canopy-evening.webp", alt: "Навес над входной группой" },
+        { src: "./assets/portfolio-canopy-evening.webp", alt: "Козырек и навес у дома" },
         { src: "./assets/canopy.webp", alt: "Металлический навес у фасада" }
       ],
       lead: "Навес над входом защищает крыльцо, дверь и входную группу от дождя, снега и наледи.",
@@ -554,12 +554,12 @@
       kicker: "арочный навес",
       title: "Арочный навес",
       tag: "округлая форма кровли",
-      image: "./assets/portfolio-canopy-blue.jpg",
+      image: "./assets/portfolio-canopy-blue.webp",
       imageAlt: "Арочный навес",
       gallery: [
-        { src: "./assets/portfolio-canopy-blue.jpg", alt: "Арочный навес для автомобиля" },
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Арочный навес для автомобиля" },
         { src: "./assets/canopy.webp", alt: "Навес с металлическим каркасом" },
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Большой навес во дворе" }
+        { src: "./assets/hero-canopy-evening.webp", alt: "Большой навес во дворе" }
       ],
       lead: "Арочный навес хорошо смотрится во дворе и помогает осадкам естественно сходить с поверхности.",
       text: "Округлая форма подходит для автомобилей, проходов, дачи и дворовых зон. Часто используется кровля из сотового поликарбоната, а каркас рассчитывается по снеговой и ветровой нагрузке.",
@@ -588,8 +588,8 @@
       imageAlt: "Односкатный навес",
       gallery: [
         { src: "./assets/canopy.webp", alt: "Односкатный навес у дома" },
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Навес с прямой кровлей" },
-        { src: "./assets/portfolio-canopy-blue.jpg", alt: "Металлический односкатный навес" }
+        { src: "./assets/hero-canopy-evening.webp", alt: "Навес с прямой кровлей" },
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Металлический односкатный навес" }
       ],
       lead: "Односкатный навес удобно ставить у дома, гаража, забора или вдоль участка.",
       text: "Вода и снег уходят в заданном направлении, поэтому конструкция хорошо подходит для узких дворов и парковок. Кровлю можно сделать из поликарбоната, профнастила, металлочерепицы, монолитного поликарбоната или мягкой кровли.",
@@ -614,12 +614,12 @@
       kicker: "двускатный навес",
       title: "Двускатный навес",
       tag: "капитальная крытая зона",
-      image: "./assets/portfolio-canopy-evening.jpg",
+      image: "./assets/portfolio-canopy-evening.webp",
       imageAlt: "Двускатный навес",
       gallery: [
-        { src: "./assets/portfolio-canopy-evening.jpg", alt: "Двускатный навес у дома" },
-        { src: "./assets/portfolio-canopy-blue.jpg", alt: "Навес с двускатной крышей" },
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Крупный навес для автомобилей" }
+        { src: "./assets/portfolio-canopy-evening.webp", alt: "Двускатный навес у дома" },
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Навес с двускатной крышей" },
+        { src: "./assets/hero-canopy-evening.webp", alt: "Крупный навес для автомобилей" }
       ],
       lead: "Двускатный навес выглядит как отдельная крытая постройка с двумя скатами.",
       text: "Он подходит для двух автомобилей, широких дворов, зоны перед гаражом или стоянки рядом с домом. Такой вариант смотрится капитально и хорошо сочетается с домами, у которых основная крыша тоже двускатная.",
@@ -644,12 +644,12 @@
       kicker: "консольный навес",
       title: "Консольный навес",
       tag: "опоры с одной стороны",
-      image: "./assets/hero-canopy-evening.jpg",
+      image: "./assets/hero-canopy-evening.webp",
       imageAlt: "Консольный навес",
       gallery: [
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Консольный навес для автомобиля" },
+        { src: "./assets/hero-canopy-evening.webp", alt: "Консольный навес для автомобиля" },
         { src: "./assets/canopy.webp", alt: "Современный металлический навес" },
-        { src: "./assets/portfolio-canopy-blue.jpg", alt: "Навес с открытым проездом" }
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Навес с открытым проездом" }
       ],
       lead: "Консольный навес оставляет больше свободного пространства под кровлей.",
       text: "Опоры располагаются с одной стороны, поэтому удобнее открывать двери автомобиля и заезжать на парковочное место. Такая конструкция выглядит современно, но требует более точного расчета нагрузок.",
@@ -674,11 +674,11 @@
       kicker: "навес хай-тек",
       title: "Навес в стиле хай-тек",
       tag: "прямые линии и скрытый уклон",
-      image: "./assets/portfolio-canopy-blue.jpg",
+      image: "./assets/portfolio-canopy-blue.webp",
       imageAlt: "Навес хай-тек",
       gallery: [
-        { src: "./assets/portfolio-canopy-blue.jpg", alt: "Навес хай-тек для двух автомобилей" },
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Современный навес у дома" },
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Навес хай-тек для двух автомобилей" },
+        { src: "./assets/hero-canopy-evening.webp", alt: "Современный навес у дома" },
         { src: "./assets/canopy.webp", alt: "Прямой металлический навес" }
       ],
       lead: "Хай-тек навес подходит для современных домов, коттеджей с плоской кровлей и парковок у гаража.",
@@ -708,8 +708,8 @@
       imageAlt: "Навес из поликарбоната",
       gallery: [
         { src: "./assets/canopy.webp", alt: "Навес из поликарбоната" },
-        { src: "./assets/portfolio-canopy-blue.jpg", alt: "Арочный навес из поликарбоната" },
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Поликарбонатный навес у дома" }
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Арочный навес из поликарбоната" },
+        { src: "./assets/hero-canopy-evening.webp", alt: "Поликарбонатный навес у дома" }
       ],
       lead: "Поликарбонат подходит для автомобиля, крыльца, террасы или двора.",
       text: "Материал пропускает свет, защищает от осадков и визуально не утяжеляет участок. Можно использовать сотовый или монолитный поликарбонат; для навесов часто выбирают СПК толщиной от 10 мм.",
@@ -738,8 +738,8 @@
       imageAlt: "Металлический навес для автомобиля",
       gallery: [
         { src: "./assets/canopy.webp", alt: "Металлический навес с профилированной кровлей" },
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Навес для нескольких автомобилей у дома" },
-        { src: "./assets/portfolio-canopy-blue.jpg", alt: "Двускатный металлический навес" }
+        { src: "./assets/hero-canopy-evening.webp", alt: "Навес для нескольких автомобилей у дома" },
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Двускатный металлический навес" }
       ],
       lead: "Практичная альтернатива гаражу: защищает автомобиль от осадков, солнца, града и листвы.",
       text: "Каркас выполняется из стальной профильной трубы и рассчитывается под размеры парковки. Кровлю можно сделать из профнастила, металлочерепицы или листовой стали, а цвет каркаса подобрать под ворота, забор или фасад дома.",
@@ -764,12 +764,12 @@
       kicker: "профнастил",
       title: "Навес из профнастила",
       tag: "плотная тень и защита от осадков",
-      image: "./assets/portfolio-canopy-blue.jpg",
+      image: "./assets/portfolio-canopy-blue.webp",
       imageAlt: "Навес из профнастила у частного дома",
       gallery: [
-        { src: "./assets/portfolio-canopy-blue.jpg", alt: "Навес из профнастила у частного дома" },
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Навес из профнастила у частного дома" },
         { src: "./assets/canopy.webp", alt: "Кровля навеса из профилированного металла" },
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Металлический навес вечером" }
+        { src: "./assets/hero-canopy-evening.webp", alt: "Металлический навес вечером" }
       ],
       lead: "Профлист не пропускает осадки и дает плотную тень для автомобиля.",
       text: "Навес из профнастила хорошо сочетается с металлическими заборами, воротами, кровлей дома и хозяйственными постройками. Материал доступен в разных цветах, поэтому конструкцию можно визуально связать с остальной въездной зоной.",
@@ -794,12 +794,12 @@
       kicker: "металлочерепица",
       title: "Навес из металлочерепицы",
       tag: "единый стиль с кровлей дома",
-      image: "./assets/hero-canopy-evening.jpg",
+      image: "./assets/hero-canopy-evening.webp",
       imageAlt: "Навес из металлочерепицы для автомобилей",
       gallery: [
-        { src: "./assets/hero-canopy-evening.jpg", alt: "Навес из металлочерепицы для автомобилей" },
-        { src: "./assets/portfolio-canopy-evening.jpg", alt: "Двускатный навес возле частного дома" },
-        { src: "./assets/portfolio-canopy-blue.jpg", alt: "Металлический навес с двускатной крышей" }
+        { src: "./assets/hero-canopy-evening.webp", alt: "Навес из металлочерепицы для автомобилей" },
+        { src: "./assets/portfolio-canopy-evening.webp", alt: "Двускатный навес возле частного дома" },
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Металлический навес с двускатной крышей" }
       ],
       lead: "Кровля выглядит более архитектурно и хорошо сочетается с домом.",
       text: "Металлочерепица подходит для навесов, которые должны быть частью общей архитектуры участка. Она уместна рядом с коттеджем, кирпичными столбами, декоративным забором и въездной группой в едином цвете.",
