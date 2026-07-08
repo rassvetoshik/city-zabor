@@ -1001,16 +1001,13 @@
       { src: "./assets/canopies/user-canopy-bbq-tile.webp", alt: "Навес с металлочерепицей для барбекю" }
     ],
     "canopy-poly": [
-      { src: "./assets/canopies/roof-polycarbonate.webp", alt: "Навес из поликарбоната" },
-      { src: "./assets/canopies/user-canopy-house-side.webp", alt: "Пристенный навес с металлическим каркасом" }
+      { src: "./assets/canopies/roof-polycarbonate.webp", alt: "Навес из поликарбоната" }
     ],
     "canopy-proflist": [
-      { src: "./assets/canopies/roof-proflist.webp", alt: "Навес с кровлей из профнастила" },
-      { src: "./assets/canopies/user-canopy-terrace-main.webp", alt: "Навес с металлической кровлей для террасы" }
+      { src: "./assets/canopies/roof-proflist.webp", alt: "Навес с кровлей из профнастила" }
     ],
     "canopy-tile": [
-      { src: "./assets/canopies/roof-metal-tile.webp", alt: "Навес с кровлей из металлочерепицы" },
-      { src: "./assets/canopies/user-canopy-house-main.webp", alt: "Навес к дому с металлической кровлей" }
+      { src: "./assets/canopies/roof-metal-tile.webp", alt: "Навес с кровлей из металлочерепицы" }
     ]
   };
 
