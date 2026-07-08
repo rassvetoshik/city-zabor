@@ -4058,9 +4058,28 @@ textarea {
   line-height: 1.05;
 }
 
+.gates-faq-section .fences-materials-grid {
+  grid-template-columns: minmax(0, 0.62fr) minmax(0, 1.38fr);
+  align-items: start;
+}
+
+.fences-materials.gates-faq-section h2 {
+  max-width: 8.2ch;
+  font-size: clamp(2.35rem, 3.4vw, 4.25rem);
+  line-height: 1.05;
+}
+
 @media (max-width: 1100px) {
   .canopies-catalog-page .fences-hero-grid {
     grid-template-columns: 1fr;
+  }
+
+  .gates-faq-section .fences-materials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fences-materials.gates-faq-section h2 {
+    max-width: 12ch;
   }
 }
 
