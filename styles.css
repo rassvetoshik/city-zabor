@@ -4751,6 +4751,71 @@ body.is-fence-modal-open {
   line-height: 1.7;
 }
 
+.canopy-faq-accordion {
+  display: grid;
+  gap: 14px;
+}
+
+.canopy-faq-item {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.canopy-faq-question {
+  display: flex;
+  width: 100%;
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 22px 26px;
+  border: 0;
+  background: transparent;
+  color: var(--white);
+  cursor: pointer;
+  font-family: "Noto Serif", serif;
+  font-size: 1.32rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.canopy-faq-question::after {
+  content: "+";
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.canopy-faq-question[aria-expanded="true"]::after {
+  content: "-";
+}
+
+.canopy-faq-answer {
+  padding: 0 26px 24px;
+}
+
+.canopy-faq-answer[hidden] {
+  display: none;
+}
+
+.canopy-faq-answer p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.7;
+}
+
 .fences-text-link {
   color: var(--primary);
   font-family: "Public Sans", sans-serif;
@@ -4898,6 +4963,184 @@ body.is-fence-modal-open {
   text-transform: uppercase;
 }
 
+.canopy-advantages {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.canopy-advantages article,
+.canopy-option-grid article,
+.canopy-size-grid article,
+.canopy-steps article {
+  border: 1px solid rgba(27, 28, 29, 0.08);
+  border-radius: 14px;
+  background: var(--white);
+  box-shadow: 0 18px 45px rgba(17, 18, 22, 0.06);
+}
+
+.canopy-advantages article {
+  min-height: 180px;
+  padding: 24px;
+}
+
+.canopy-advantages span,
+.canopy-option-grid span,
+.canopy-steps span {
+  color: var(--primary);
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.canopy-advantages h3,
+.canopy-option-grid h3,
+.canopy-size-grid h3,
+.canopy-steps h3 {
+  margin: 12px 0 10px;
+  font-family: "Noto Serif", serif;
+  color: var(--text);
+  line-height: 1.08;
+}
+
+.canopy-advantages h3 {
+  font-size: 1.45rem;
+}
+
+.canopy-advantages p,
+.canopy-option-grid p,
+.canopy-size-grid p,
+.canopy-steps p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.canopy-option-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.canopy-option-grid article {
+  display: flex;
+  min-height: 280px;
+  flex-direction: column;
+  padding: 24px;
+  cursor: pointer;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.canopy-option-grid h3 {
+  font-size: 1.42rem;
+}
+
+.canopy-option-grid ul {
+  display: grid;
+  gap: 8px;
+  margin: auto 0 0;
+  padding: 18px 0 0;
+  list-style: none;
+}
+
+.canopy-option-grid li {
+  position: relative;
+  padding-left: 16px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.canopy-option-grid li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.56em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.canopy-tech-section p {
+  max-width: 58ch;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.7;
+}
+
+.canopy-tech-table {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.canopy-tech-table div {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.45fr) minmax(0, 1fr);
+  gap: 18px;
+  padding: 18px 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.canopy-tech-table div:last-child {
+  border-bottom: 0;
+}
+
+.canopy-tech-table span {
+  color: rgba(255, 255, 255, 0.62);
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.canopy-tech-table strong {
+  color: var(--white);
+  font-size: 0.96rem;
+  line-height: 1.45;
+}
+
+.canopy-size-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.canopy-size-grid article {
+  padding: 28px;
+}
+
+.canopy-size-grid h3 {
+  font-size: 1.45rem;
+}
+
+.canopy-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.canopy-steps article {
+  min-height: 220px;
+  padding: 26px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: none;
+}
+
+.canopy-steps h3 {
+  color: var(--white);
+  font-size: 1.42rem;
+}
+
+.canopy-steps p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .product-tile,
 .calculator-card,
 .process-grid article,
@@ -4906,6 +5149,10 @@ body.is-fence-modal-open {
 .fences-type-card,
 .fences-project-grid article,
 .fences-form,
+.canopy-advantages article,
+.canopy-option-grid article,
+.canopy-size-grid article,
+.canopy-steps article,
 .canopies-material-board,
 .canopies-use-card,
 .canopies-form,
@@ -4919,6 +5166,10 @@ body.is-fence-modal-open {
 .process-grid article:hover,
 .fences-type-card:hover,
 .fences-project-grid article:hover,
+.canopy-advantages article:hover,
+.canopy-option-grid article:hover,
+.canopy-size-grid article:hover,
+.canopy-steps article:hover,
 .canopies-use-card:hover,
 .gates-stitch-card:hover,
 .gates-stitch-projects article:hover {
@@ -5707,7 +5958,14 @@ body.is-measure-quiz-open {
   }
 
   .fences-type-grid,
-  .fences-project-grid {
+  .fences-project-grid,
+  .canopy-advantages,
+  .canopy-size-grid,
+  .canopy-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .canopy-option-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -6157,7 +6415,11 @@ body.is-measure-quiz-open {
 
   .fences-type-grid,
   .fences-project-grid,
-  .fences-section-head-row {
+  .fences-section-head-row,
+  .canopy-advantages,
+  .canopy-option-grid,
+  .canopy-size-grid,
+  .canopy-steps {
     grid-template-columns: 1fr;
   }
 
@@ -6186,6 +6448,36 @@ body.is-measure-quiz-open {
 
   .fences-form {
     padding: 24px;
+  }
+
+  .canopy-faq-question {
+    min-height: 68px;
+    padding: 18px;
+    font-size: 1.08rem;
+  }
+
+  .canopy-faq-question::after {
+    width: 30px;
+    height: 30px;
+    flex-basis: 30px;
+  }
+
+  .canopy-faq-answer {
+    padding: 0 18px 20px;
+  }
+
+  .canopy-tech-table div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .canopy-advantages article,
+  .canopy-option-grid article,
+  .canopy-size-grid article,
+  .canopy-steps article {
+    min-height: auto;
+    padding: 22px;
   }
 
   .canopy-brief-row,

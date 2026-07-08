@@ -400,6 +400,36 @@
         "Монтаж опор, ферм, обрешетки, кровли и водоотвода по необходимости."
       ]
     },
+    "canopy-two-cars": {
+      kicker: "навес на две машины",
+      title: "Навес на две машины",
+      tag: "широкая усиленная парковка",
+      image: "./assets/hero-canopy-evening.webp",
+      imageAlt: "Навес на две машины",
+      gallery: [
+        { src: "./assets/hero-canopy-evening.webp", alt: "Навес на две машины у частного дома" },
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Широкий металлический навес для автомобилей" },
+        { src: "./assets/portfolio-canopy-evening.webp", alt: "Двускатный навес для двух автомобилей" }
+      ],
+      lead: "Увеличенный металлический навес для одновременной стоянки двух автомобилей.",
+      text: "Подходит для семей с несколькими машинами, гостевых парковок и частных домов с широким въездом. Для такой конструкции обычно используют усиленные опоры 80x80 или 100x100 мм и фермы, рассчитанные на снеговую нагрузку.",
+      specs: [
+        ["Ширина", "5,5-6,5 м"],
+        ["Длина", "6-8 м"],
+        ["Опоры", "80x80 / 100x100"],
+        ["Форма", "арочная / одно- / двускатная"]
+      ],
+      points: [
+        "Закрывает две машины одной общей кровлей.",
+        "Подходит для широкой въездной зоны и гостевой парковки.",
+        "Требует усиленного расчета металлокаркаса."
+      ],
+      included: [
+        "Замер ширины въезда и парковочной площадки.",
+        "Расчет усиленных опор, ферм и обрешетки.",
+        "Монтаж кровли, водоотвода и дополнительных элементов по задаче."
+      ]
+    },
     "canopy-dacha": {
       kicker: "навес для дачи",
       title: "Навес для дачи",
@@ -550,6 +580,36 @@
         "Монтаж каркаса, кровли и крепежных узлов."
       ]
     },
+    "canopy-bbq": {
+      kicker: "мангальная зона",
+      title: "Навес для барбекю",
+      tag: "крытая зона готовки и отдыха",
+      image: "./assets/portfolio-canopy-evening.webp",
+      imageAlt: "Навес для барбекю",
+      gallery: [
+        { src: "./assets/portfolio-canopy-evening.webp", alt: "Навес для зоны барбекю" },
+        { src: "./assets/hero-canopy-evening.webp", alt: "Крытая зона отдыха у дома" },
+        { src: "./assets/canopy.webp", alt: "Металлический навес на участке" }
+      ],
+      lead: "Навес для барбекю защищает мангальную зону, летнюю кухню или место отдыха от дождя и солнца.",
+      text: "Конструкция помогает пользоваться зоной готовки круглый год и делает участок более функциональным. При проектировании учитывают безопасное расстояние от источника огня, дымоход, вытяжку и возможность боковых панелей.",
+      specs: [
+        ["Зона", "мангал / летняя кухня"],
+        ["Каркас", "профильная труба"],
+        ["Кровля", "профнастил / металлочерепица / ПК"],
+        ["Опции", "боковые панели"]
+      ],
+      points: [
+        "Закрывает рабочую зону, стол и мебель от осадков.",
+        "Можно сделать односкатную, двускатную или арочную форму.",
+        "Важно учесть безопасность рядом с источником огня."
+      ],
+      included: [
+        "Замер площадки и расположения мангала.",
+        "Подбор кровли и высоты с учетом дыма и вентиляции.",
+        "Монтаж каркаса, кровли и защитных элементов по необходимости."
+      ]
+    },
     "canopy-arch": {
       kicker: "арочный навес",
       title: "Арочный навес",
@@ -578,6 +638,36 @@
         "Расчет радиуса, ферм и шага опор.",
         "Изготовление металлических ферм и обрешетки.",
         "Монтаж кровли, крепежа и водоотвода."
+      ]
+    },
+    "canopy-half-arch": {
+      kicker: "полуарочный навес",
+      title: "Полуарочный навес",
+      tag: "мягкая форма у фасада",
+      image: "./assets/hero-canopy-evening.webp",
+      imageAlt: "Полуарочный навес",
+      gallery: [
+        { src: "./assets/hero-canopy-evening.webp", alt: "Полуарочный навес у дома" },
+        { src: "./assets/canopy.webp", alt: "Пристенный металлический навес" },
+        { src: "./assets/portfolio-canopy-evening.webp", alt: "Навес над террасой" }
+      ],
+      lead: "Полуарочный навес сочетает преимущества односкатной и арочной конструкции.",
+      text: "Он хорошо подходит для установки у стены дома, над крыльцом, террасой или проходной зоной. Одна сторона выше другой, а плавный радиус кровли делает конструкцию легче визуально.",
+      specs: [
+        ["Форма", "плавный радиус"],
+        ["Крепление", "стена / опоры"],
+        ["Кровля", "часто поликарбонат"],
+        ["Покраска", "цвет по RAL"]
+      ],
+      points: [
+        "Хорошо смотрится рядом с фасадом.",
+        "Подходит для входных зон, террас и проходов.",
+        "Можно дополнить водосточной системой."
+      ],
+      included: [
+        "Расчет высот и радиуса кровли.",
+        "Подбор узла крепления к стене или независимых опор.",
+        "Монтаж каркаса, кровли и водоотвода."
       ]
     },
     "canopy-single": {
@@ -638,6 +728,36 @@
         "Проектирование двухскатной ферменной системы.",
         "Монтаж опор, боковых балок, ферм и лаг.",
         "Укладка кровли, коньков, планок и водоотвода."
+      ]
+    },
+    "canopy-flat": {
+      kicker: "прямой навес",
+      title: "Прямой навес",
+      tag: "минимализм и скрытый уклон",
+      image: "./assets/portfolio-canopy-blue.webp",
+      imageAlt: "Прямой металлический навес",
+      gallery: [
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Прямой навес у дома" },
+        { src: "./assets/hero-canopy-evening.webp", alt: "Современный металлический навес" },
+        { src: "./assets/canopy.webp", alt: "Навес с ровной линией кровли" }
+      ],
+      lead: "Прямой навес подходит для современных домов, минималистичных фасадов, входных групп и коммерческих объектов.",
+      text: "Визуально кровля выглядит ровной, но внутри закладывается небольшой уклон для отвода воды. Такой вариант хорошо сочетается с профнастилом, металлочерепицей, мягкой кровлей или монолитным поликарбонатом.",
+      specs: [
+        ["Геометрия", "ровная линия"],
+        ["Уклон", "скрытый"],
+        ["Каркас", "профильная труба"],
+        ["Стиль", "хай-тек"]
+      ],
+      points: [
+        "Подходит к современным домам и коммерческим объектам.",
+        "Можно сделать скрытый водоотвод.",
+        "Хорошо смотрится с забором и воротами в строгой геометрии."
+      ],
+      included: [
+        "Подбор пропорций и скрытого уклона.",
+        "Расчет каркаса и обрешетки под выбранную кровлю.",
+        "Монтаж кровельных планок, водоотвода и примыканий."
       ]
     },
     "canopy-console": {
@@ -819,8 +939,87 @@
         "Сборка ферм и обрешетки под выбранный кровельный материал.",
         "Монтаж листов, коньков, планок и водоотвода при необходимости."
       ]
+    },
+    "canopy-soft-roof": {
+      kicker: "мягкая кровля",
+      title: "Навес с мягкой кровлей",
+      tag: "тише дождь и архитектурный вид",
+      image: "./assets/portfolio-canopy-evening.webp",
+      imageAlt: "Навес с мягкой кровлей",
+      gallery: [
+        { src: "./assets/portfolio-canopy-evening.webp", alt: "Навес с мягкой кровлей у дома" },
+        { src: "./assets/hero-canopy-evening.webp", alt: "Крытый навес рядом с коттеджем" },
+        { src: "./assets/portfolio-canopy-blue.webp", alt: "Металлический навес со скатной кровлей" }
+      ],
+      lead: "Мягкая кровля используется для навесов, которые должны выглядеть как часть архитектуры дома.",
+      text: "Такой вариант подходит для зон отдыха, входных групп, террас и навесов рядом с коттеджем. Он обычно дороже профнастила, требует сплошной основы, но выглядит аккуратно и тише во время дождя.",
+      specs: [
+        ["Основа", "сплошная"],
+        ["Форма", "одно- / двускатная"],
+        ["Шум дождя", "ниже металла"],
+        ["Класс", "премиум"]
+      ],
+      points: [
+        "Можно подобрать внешний вид под крышу дома.",
+        "Подходит для террас и входных зон.",
+        "Требует грамотной основы и водоотвода."
+      ],
+      included: [
+        "Расчет ската и основания под мягкую кровлю.",
+        "Подготовка сплошного настила и примыканий.",
+        "Монтаж кровельного покрытия и водоотвода."
+      ]
     }
   };
+
+  const canopyPhotoGalleries = {
+    "canopy-car": [
+      { src: "./assets/canopies/user-canopy-car.webp", alt: "Металлический навес для одного автомобиля" },
+      { src: "./assets/canopies/user-canopy-house-driveway.webp", alt: "Широкий навес над въездной зоной" }
+    ],
+    "canopy-two-cars": [
+      { src: "./assets/canopies/user-canopy-two-cars-winter.webp", alt: "Навес на две машины зимой" },
+      { src: "./assets/canopies/user-canopy-two-cars-gable.webp", alt: "Двускатный навес на две машины" },
+      { src: "./assets/canopies/user-canopy-two-cars-flat.webp", alt: "Плоский навес для автомобилей" }
+    ],
+    "canopy-house": [
+      { src: "./assets/canopies/user-canopy-house-main.webp", alt: "Металлический навес к дому" },
+      { src: "./assets/canopies/user-canopy-house-side.webp", alt: "Пристенный навес к дому" },
+      { src: "./assets/canopies/user-canopy-house-driveway.webp", alt: "Навес к дому над въездом" }
+    ],
+    "canopy-terrace": [
+      { src: "./assets/canopies/user-canopy-terrace-main.webp", alt: "Навес для террасы у дома" },
+      { src: "./assets/canopies/user-canopy-terrace-ornate.webp", alt: "Навес для террасы с декоративными стойками" }
+    ],
+    "canopy-entrance": [
+      { src: "./assets/canopies/user-canopy-entrance.webp", alt: "Навес над крыльцом" }
+    ],
+    "canopy-bbq": [
+      { src: "./assets/canopies/user-canopy-bbq-main.webp", alt: "Навес для барбекю" },
+      { src: "./assets/canopies/user-canopy-bbq-modern.webp", alt: "Современный навес для барбекю" },
+      { src: "./assets/canopies/user-canopy-bbq-small.webp", alt: "Навес для зоны барбекю" },
+      { src: "./assets/canopies/user-canopy-bbq-tile.webp", alt: "Навес с металлочерепицей для барбекю" }
+    ],
+    "canopy-poly": [
+      { src: "./assets/canopies/roof-polycarbonate.webp", alt: "Навес из поликарбоната" },
+      { src: "./assets/canopies/user-canopy-house-side.webp", alt: "Пристенный навес с металлическим каркасом" }
+    ],
+    "canopy-proflist": [
+      { src: "./assets/canopies/roof-proflist.webp", alt: "Навес с кровлей из профнастила" },
+      { src: "./assets/canopies/user-canopy-terrace-main.webp", alt: "Навес с металлической кровлей для террасы" }
+    ],
+    "canopy-tile": [
+      { src: "./assets/canopies/roof-metal-tile.webp", alt: "Навес с кровлей из металлочерепицы" },
+      { src: "./assets/canopies/user-canopy-house-main.webp", alt: "Навес к дому с металлической кровлей" }
+    ]
+  };
+
+  Object.entries(canopyPhotoGalleries).forEach(([key, gallery]) => {
+    if (!fenceDetails[key] || !gallery.length) return;
+    fenceDetails[key].image = gallery[0].src;
+    fenceDetails[key].imageAlt = gallery[0].alt;
+    fenceDetails[key].gallery = gallery;
+  });
 
   const modal = document.querySelector("[data-fence-modal]");
   const detailCards = Array.from(document.querySelectorAll("[data-fence-detail]"));
@@ -1071,6 +1270,37 @@
     });
   });
 
+  const canopyFaqAccordions = Array.from(document.querySelectorAll("[data-canopy-faq]"));
+  canopyFaqAccordions.forEach(accordion => {
+    const items = Array.from(accordion.querySelectorAll(".canopy-faq-item"));
+
+    const closeItem = item => {
+      const question = item.querySelector(".canopy-faq-question");
+      const answer = item.querySelector(".canopy-faq-answer");
+      if (!question || !answer) return;
+      question.setAttribute("aria-expanded", "false");
+      answer.hidden = true;
+      item.classList.remove("is-open");
+    };
+
+    items.forEach(item => {
+      const question = item.querySelector(".canopy-faq-question");
+      const answer = item.querySelector(".canopy-faq-answer");
+      if (!question || !answer) return;
+
+      question.addEventListener("click", () => {
+        const shouldOpen = question.getAttribute("aria-expanded") !== "true";
+        items.forEach(closeItem);
+
+        if (shouldOpen) {
+          question.setAttribute("aria-expanded", "true");
+          answer.hidden = false;
+          item.classList.add("is-open");
+        }
+      });
+    });
+  });
+
   if (prefersReducedMotion || !("IntersectionObserver" in window)) return;
 
   const revealSelector = [
@@ -1088,6 +1318,10 @@
     ".fences-hero-copy",
     ".fences-hero-panel",
     ".fences-type-card",
+    ".canopy-advantages article",
+    ".canopy-option-grid article",
+    ".canopy-size-grid article",
+    ".canopy-steps article",
     ".fences-material-list article",
     ".fences-project-grid article",
     ".fences-contact-copy",
