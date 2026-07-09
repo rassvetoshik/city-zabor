@@ -7101,62 +7101,6 @@ body.is-measure-quiz-open {
   text-transform: uppercase;
 }
 
-.contacts-methods {
-  padding: 34px 0 92px;
-}
-
-.contacts-method-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-}
-
-.contacts-method-card {
-  display: grid;
-  gap: 12px;
-  min-height: 220px;
-  padding: 24px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.74);
-  border: 1px solid rgba(139, 112, 76, 0.14);
-  box-shadow: 0 20px 54px rgba(67, 51, 28, 0.08);
-}
-
-.contacts-method-main {
-  background: var(--primary);
-  color: var(--white);
-}
-
-.contacts-method-card span {
-  color: var(--primary);
-  font-family: "Public Sans", sans-serif;
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.contacts-method-main span {
-  color: rgba(255, 255, 255, 0.72);
-}
-
-.contacts-method-card strong {
-  align-self: end;
-  font-family: "Noto Serif", serif;
-  font-size: clamp(1.42rem, 1.8vw, 2rem);
-  line-height: 1.08;
-}
-
-.contacts-method-card em {
-  color: var(--muted);
-  font-style: normal;
-  line-height: 1.5;
-}
-
-.contacts-method-main em {
-  color: rgba(255, 255, 255, 0.78);
-}
-
 .contacts-service-area {
   padding: 0 0 108px;
 }
@@ -7311,7 +7255,6 @@ body.is-measure-quiz-open {
     grid-template-columns: 1fr;
   }
 
-  .contacts-method-grid,
   .pier-process-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -7326,7 +7269,6 @@ body.is-measure-quiz-open {
     max-width: 100%;
   }
 
-  .contacts-method-grid,
   .pier-process-grid {
     grid-template-columns: 1fr;
   }
