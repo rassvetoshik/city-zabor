@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:wght@400;600;700&family=Public+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./styles.css?v=20260618-no-quiz" />
+    <link rel="stylesheet" href="./styles.css?v=20260709-contact-icons" />
   </head>
   <body>
     <header class="site-header">
@@ -39,10 +39,10 @@
           </div>
           <div class="header-messengers" aria-label="Мессенджеры">
             <a class="messenger-link" href="tel:+79013811181" aria-label="Max">
-              <img src="./assets/max-logo.webp" alt="" />
+              <img src="./assets/max-logo-black.svg" alt="" />
             </a>
             <a class="messenger-link messenger-link-telegram" href="tel:+79969668691" aria-label="Телеграм">
-              <img src="./assets/telegram-logo.webp" alt="" />
+              <img src="./assets/telegram-logo-black.png" alt="" />
             </a>
           </div>
           <a class="header-action" href="./contacts.html">Консультация</a>
@@ -50,64 +50,48 @@
       </div>
     </header>
     <main class="contacts-page">
-      <section class="contacts-hero">
-        <div class="container contacts-hero-grid">
-          <div class="contacts-hero-copy">
+      <section class="contacts-premium">
+        <div class="contacts-premium-bg" aria-hidden="true"></div>
+        <div class="container contacts-premium-grid">
+          <div class="contacts-premium-copy">
             <span class="fences-kicker">контакты</span>
-            <h1>Свяжитесь напрямую, без заявок на сайте</h1>
+            <h1>Позвоните или напишите нам напрямую</h1>
             <p>
-              Позвоните или напишите в мессенджер. Можно сразу отправить фото участка,
-              примерные размеры и задачу — договоримся о бесплатном выезде для расчета.
+              Без форм и ожидания ответа. Пришлите фото участка, примерные размеры
+              или просто опишите задачу — договоримся о бесплатном выезде для расчета.
             </p>
-            <div class="contacts-primary-actions">
+            <div class="contacts-premium-actions">
               <a class="fences-button" href="tel:+79013811181">Позвонить</a>
               <a class="fences-button fences-button-muted" href="https://web.max.ru/" target="_blank" rel="noopener">Max</a>
               <a class="fences-button fences-button-muted" href="tg://resolve?phone=79969668691">Telegram</a>
             </div>
           </div>
 
-          <div class="contacts-logo-panel">
-            <img src="./assets/site-logo-new.png" alt="Сити Заборы" />
-            <span>более 10 лет</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="contacts-methods">
-        <div class="container contacts-method-grid">
-          <a class="contacts-method-card contacts-method-main" href="tel:+79013811181">
-            <span>основной телефон</span>
-            <strong>+7 (901) 381-11-81</strong>
-            <em>звонок по забору, воротам, навесу или причалу</em>
-          </a>
-          <a class="contacts-method-card" href="tel:+79997140877">
-            <span>дополнительный телефон</span>
-            <strong>+7 (999) 714-08-77</strong>
-            <em>если первый номер занят</em>
-          </a>
-          <a class="contacts-method-card" href="https://web.max.ru/" target="_blank" rel="noopener">
-            <span>мессенджер</span>
-            <strong>Max</strong>
-            <em>удобно отправить фото участка</em>
-          </a>
-          <a class="contacts-method-card" href="tg://resolve?phone=79969668691">
-            <span>мессенджер</span>
-            <strong>Telegram</strong>
-            <em>быстро обсудить размеры и материалы</em>
-          </a>
-        </div>
-      </section>
-
-      <section class="contacts-service-area">
-        <div class="container contacts-service-shell">
-          <div>
-            <span class="fences-kicker">выезд на объект</span>
-            <h2>Москва и Московская область</h2>
-          </div>
-          <p>
-            На месте смотрим участок, подъезд, грунт, перепады высот и примыкания.
-            После этого предлагаем материал, конструкцию и понятный порядок работ.
-          </p>
+          <aside class="contacts-premium-card">
+            <img class="contacts-premium-logo" src="./assets/site-logo-new.png" alt="Сити Заборы" />
+            <div class="contacts-card-head">
+              <span>Москва и Московская область</span>
+              <h2>Бесплатный выезд для расчета</h2>
+            </div>
+            <div class="contacts-card-list">
+              <a href="tel:+79013811181">
+                <span>Телефон</span>
+                <strong>+7 (901) 381-11-81</strong>
+              </a>
+              <a href="tel:+79997140877">
+                <span>Доп. телефон</span>
+                <strong>+7 (999) 714-08-77</strong>
+              </a>
+              <a href="https://web.max.ru/" target="_blank" rel="noopener">
+                <span>Max</span>
+                <strong>Написать в Max</strong>
+              </a>
+              <a href="tg://resolve?phone=79969668691">
+                <span>Telegram</span>
+                <strong>Написать в Telegram</strong>
+              </a>
+            </div>
+          </aside>
         </div>
       </section>
     </main>
@@ -119,10 +103,6 @@
               <img class="footer-logo" src="./assets/site-logo-new.png" alt="Логотип компании Сити Заборы" />
               <strong>Сити Заборы</strong>
             </div>
-            <p>
-              Делаем заборы, ворота, навесы и причалы под участок: подбираем материалы,
-              приезжаем на замер и обсуждаем решение напрямую по телефону или в мессенджере.
-            </p>
             <a class="footer-cta" href="./contacts.html">Написать для расчета</a>
           </div>
 

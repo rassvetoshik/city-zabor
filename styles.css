@@ -7344,3 +7344,369 @@ body.is-measure-quiz-open {
     text-align: left;
   }
 }
+
+/* Pier process diagram refresh */
+.pier-process-section {
+  padding: 104px 0;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 247, 0.94), rgba(245, 230, 220, 0.66)),
+    var(--page-gradient);
+}
+
+.pier-process-panel {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.62fr) minmax(360px, 1fr);
+  grid-template-areas:
+    "copy graphic"
+    "steps graphic";
+  gap: 28px;
+  align-items: stretch;
+}
+
+.pier-process-copy {
+  grid-area: copy;
+  padding: clamp(26px, 3vw, 38px);
+  border-radius: 24px;
+  background: var(--surface-dark);
+  color: var(--white);
+}
+
+.pier-process-copy h2 {
+  max-width: 9ch;
+  margin: 12px 0 0;
+  font-family: "Noto Serif", serif;
+  font-size: clamp(2.4rem, 4vw, 4.8rem);
+  line-height: 0.95;
+}
+
+.pier-process-copy p {
+  max-width: 42ch;
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.74);
+  line-height: 1.65;
+}
+
+.pier-process-graphic {
+  grid-area: graphic;
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, #bde9ff 0 30%, #80c7e0 31% 44%, #22687e 45% 100%);
+  box-shadow: 0 28px 78px rgba(17, 18, 22, 0.14);
+}
+
+.pier-process-graphic::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 74% 16%, rgba(255, 255, 255, 0.92) 0 46px, transparent 48px),
+    linear-gradient(180deg, transparent 0 45%, rgba(255, 255, 255, 0.16) 46% 100%);
+}
+
+.pier-graphic-shore {
+  position: absolute;
+  left: -8%;
+  right: -8%;
+  top: 34%;
+  height: 24%;
+  background:
+    radial-gradient(circle at 18% 22%, #4f7e3f 0 18px, transparent 19px),
+    radial-gradient(circle at 36% 12%, #2f6d3c 0 24px, transparent 25px),
+    radial-gradient(circle at 58% 20%, #6c8c42 0 18px, transparent 19px),
+    linear-gradient(180deg, #8f7344, #6e552f);
+  transform: rotate(-2deg);
+}
+
+.pier-graphic-water {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  bottom: 0;
+  height: 46%;
+  background:
+    repeating-linear-gradient(168deg, rgba(255, 255, 255, 0.28) 0 2px, transparent 2px 24px),
+    linear-gradient(180deg, rgba(46, 126, 154, 0.94), rgba(14, 65, 89, 0.98));
+}
+
+.pier-graphic-deck {
+  position: absolute;
+  left: 28%;
+  right: 28%;
+  top: 36%;
+  height: 46%;
+  border-radius: 8px;
+  background:
+    repeating-linear-gradient(90deg, #d2aa68 0 14px, #9f753a 14px 17px),
+    #c99a56;
+  transform: perspective(420px) rotateX(55deg);
+  transform-origin: top;
+  box-shadow: 0 30px 46px rgba(12, 24, 32, 0.28);
+}
+
+.pier-graphic-post {
+  position: absolute;
+  top: 43%;
+  width: 12px;
+  height: 40%;
+  border-radius: 999px;
+  background: #4f3826;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.14);
+}
+
+.pier-graphic-post-one {
+  left: 33%;
+}
+
+.pier-graphic-post-two {
+  right: 33%;
+}
+
+.pier-graphic-boat {
+  position: absolute;
+  right: 9%;
+  bottom: 22%;
+  width: 148px;
+  height: 44px;
+  border-radius: 10px 48px 48px 18px;
+  background: #11151c;
+  box-shadow:
+    inset 24px 0 0 rgba(255, 255, 255, 0.9),
+    0 18px 28px rgba(0, 0, 0, 0.24);
+  transform: rotate(-6deg);
+}
+
+.pier-process-steps {
+  grid-area: steps;
+  display: grid;
+  gap: 12px;
+}
+
+.pier-process-steps .pier-process-card {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  min-height: auto;
+  padding: 22px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.pier-process-steps .pier-process-card span {
+  margin-top: 2px;
+}
+
+.pier-process-steps .pier-process-card h3 {
+  margin: 0 0 8px;
+  font-size: clamp(1.35rem, 1.6vw, 1.8rem);
+}
+
+.pier-process-steps .pier-process-card p {
+  font-size: 0.98rem;
+}
+
+@media (max-width: 980px) {
+  .pier-process-panel {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "copy"
+      "graphic"
+      "steps";
+  }
+
+  .pier-process-graphic {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 560px) {
+  .pier-process-steps .pier-process-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact page premium rebuild and clean messenger icons */
+.messenger-link,
+.messenger-link:hover,
+.contact-messenger-links a,
+.contact-messenger-links a:hover {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.messenger-link img,
+.contact-messenger-links img {
+  mix-blend-mode: normal !important;
+  filter: none !important;
+}
+
+.messenger-link img {
+  width: 22px;
+  height: 22px;
+}
+
+.contact-phone-link {
+  display: inline-block;
+  color: var(--white);
+  font-family: "Noto Serif", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.contact-phone-link:hover {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.contacts-premium {
+  position: relative;
+  min-height: calc(100vh - 116px);
+  padding: clamp(72px, 7vw, 118px) 0;
+  overflow: hidden;
+  color: var(--white);
+  background: #121318;
+}
+
+.contacts-premium-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(13, 14, 18, 0.92) 0%, rgba(13, 14, 18, 0.72) 42%, rgba(13, 14, 18, 0.36) 100%),
+    linear-gradient(180deg, rgba(13, 14, 18, 0.24), rgba(13, 14, 18, 0.82)),
+    url("./assets/portfolio-modern-fence.webp") center / cover no-repeat;
+  transform: scale(1.02);
+}
+
+.contacts-premium::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, transparent 0 49%, rgba(255, 255, 255, 0.08) 49.08% 49.18%, transparent 49.26%),
+    linear-gradient(180deg, transparent 0 50%, rgba(255, 255, 255, 0.06) 50.08% 50.18%, transparent 50.26%);
+  opacity: 0.42;
+  pointer-events: none;
+}
+
+.contacts-premium-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.72fr);
+  gap: clamp(36px, 6vw, 96px);
+  align-items: center;
+}
+
+.contacts-premium-copy h1 {
+  max-width: 11ch;
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  font-size: clamp(3.6rem, 7vw, 7.8rem);
+  line-height: 0.92;
+}
+
+.contacts-premium-copy p {
+  max-width: 58ch;
+  margin: 28px 0 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: clamp(1.05rem, 1.3vw, 1.28rem);
+  line-height: 1.75;
+}
+
+.contacts-premium-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+.contacts-premium-card {
+  position: relative;
+  display: grid;
+  gap: 24px;
+  padding: clamp(24px, 3vw, 38px);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  -webkit-backdrop-filter: blur(22px) saturate(1.1);
+  backdrop-filter: blur(22px) saturate(1.1);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.24);
+}
+
+.contacts-premium-logo {
+  width: clamp(120px, 12vw, 190px);
+  border-radius: 50%;
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.28);
+}
+
+.contacts-card-head span {
+  color: rgba(255, 255, 255, 0.64);
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.contacts-card-head h2 {
+  margin: 10px 0 0;
+  font-family: "Noto Serif", serif;
+  font-size: clamp(1.75rem, 2.3vw, 2.6rem);
+  line-height: 1.05;
+}
+
+.contacts-card-list {
+  display: grid;
+  gap: 10px;
+}
+
+.contacts-card-list a {
+  display: grid;
+  gap: 4px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.contacts-card-list a:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.contacts-card-list span {
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contacts-card-list strong {
+  color: var(--white);
+  font-size: clamp(1.02rem, 1.2vw, 1.2rem);
+}
+
+@media (max-width: 980px) {
+  .contacts-premium-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts-premium-copy h1 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .contacts-premium {
+    min-height: auto;
+    padding: 56px 0;
+  }
+
+  .contacts-premium-copy h1 {
+    font-size: clamp(2.7rem, 13vw, 4.4rem);
+  }
+}
