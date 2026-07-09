@@ -21,7 +21,7 @@
       <div class="container header-inner">
         <a class="brand" href="./index.html">
           <span class="brand-logo-wrap">
-            <img class="brand-logo" src="./assets/site-logo-new.png" alt="Логотип компании" />
+            <img class="brand-logo" src="./assets/site-logo-new.png" alt="Логотип компании Сити Заборы" />
           </span>
           <span class="brand-text">
             <span class="brand-title">Сити Заборы</span>
@@ -32,15 +32,17 @@
         <nav class="site-nav" aria-label="Основная навигация">
           <a href="./index.html">Главная</a>
           <a class="is-active" href="./fences.html">Заборы</a>
-          <a href="./gates.html">Ворота</a>
           <a href="./canopies.html">Навесы</a>
+          <a href="./piers.html">Пирсы</a>
           <a href="./portfolio.html">Портфолио</a>
-          <a href="#fences-contact">Контакты</a>
+          <a href="./contacts.html">Контакты</a>
         </nav>
 
         <div class="header-tools">
-          <a class="header-calc" href="./index.html#calculator">Калькулятор расчета</a>
-          <a class="header-phone" href="tel:+79013811181">+7 (901) 381-11-81</a>
+          <div class="header-phones" aria-label="Телефоны">
+            <a class="header-phone" href="tel:+79013811181">+7 (901) 381-11-81</a>
+            <a class="header-phone" href="tel:+79997140877">+7 (999) 714-08-77</a>
+          </div>
           <div class="header-messengers" aria-label="Мессенджеры">
             <a class="messenger-link" href="tel:+79013811181" aria-label="Max">
               <img src="./assets/max-logo.webp" alt="" />
@@ -49,7 +51,7 @@
               <img src="./assets/telegram-logo.webp" alt="" />
             </a>
           </div>
-          <a class="header-action" href="#fences-contact">Консультация</a>
+          <a class="header-action" href="./contacts.html">Консультация</a>
         </div>
       </div>
     </header>
@@ -66,7 +68,7 @@
               и комбинированных решений.
             </p>
             <div class="fences-hero-actions">
-              <a class="fences-button" href="#fences-contact">Получить расчет</a>
+              <a class="fences-button" href="./contacts.html">Консультация</a>
               <a class="fences-button fences-button-muted" href="#fence-types">Смотреть виды</a>
             </div>
           </div>
@@ -218,8 +220,8 @@
             </div>
 
             <div class="fence-detail-actions">
-              <a class="fences-button" href="#fences-contact" data-fence-close>Заказать расчет</a>
-              <a class="fences-button fences-button-muted" href="#fences-contact" data-fence-close>Вызвать замерщика</a>
+              <a class="fences-button" href="./contacts.html" data-fence-close>Консультация</a>
+              <a class="fences-button fences-button-muted" href="./contacts.html" data-fence-close>Бесплатный выезд</a>
             </div>
           </div>
         </section>
@@ -248,36 +250,6 @@
         </div>
       </section>
 
-      <section class="fences-projects">
-        <div class="container">
-          <div class="fences-section-head fences-section-head-row">
-            <div>
-              <span class="fences-kicker">портфолио</span>
-              <h2>Линия забора задает характер участка</h2>
-            </div>
-            <a class="fences-text-link" href="#fences-contact">Обсудить проект</a>
-          </div>
-
-          <div class="fences-project-grid">
-            <article>
-              <img src="./assets/long-fence.webp" alt="Длинная линия современного забора" />
-              <h3>Длинный периметр</h3>
-              <p>Единая геометрия секций и чистые стыки по всей линии участка.</p>
-            </article>
-            <article>
-              <img src="./assets/fence-brown.webp" alt="Забор под дерево" />
-              <h3>Теплая фактура</h3>
-              <p>Металл с декоративным покрытием под дерево для современного дома.</p>
-            </article>
-            <article>
-              <img src="./assets/montage-1.webp" alt="Монтаж забора" />
-              <h3>Точный монтаж</h3>
-              <p>Соблюдаем высоты, зазоры и сроки, которые фиксируются в договоре.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section class="fences-contact" id="fences-contact">
         <div class="container fences-contact-grid">
           <div class="fences-contact-copy">
@@ -295,75 +267,59 @@
             </div>
           </div>
 
-          <form class="fences-form">
-            <label>
-              <span>Ваше имя</span>
-              <input type="text" placeholder="Иван Иванов" />
-            </label>
-            <label>
-              <span>Телефон</span>
-              <input type="tel" placeholder="+7 901 381-11-81" />
-            </label>
-            <label>
-              <span>Интересующий тип</span>
-              <select>
-                <option>Нужна консультация по виду забора</option>
-                <option>Профнастил</option>
-                <option>Металлический штакетник</option>
-                <option>Забор-жалюзи</option>
-                <option>Ранчо</option>
-                <option>Сетка рабица</option>
-              </select>
-            </label>
-            <label>
-              <span>Комментарий</span>
-              <textarea rows="5" placeholder="Опишите участок, длину забора или пожелания"></textarea>
-            </label>
-            <button class="fences-button fences-button-full" type="button">Отправить заявку</button>
-          </form>
+          <div class="direct-contact-card direct-contact-card-light">
+            <span class="direct-contact-kicker">без формы и ожидания</span>
+            <h3>Напишите нам и получите бесплатный выезд для расчета</h3>
+            <p>Позвоните или напишите в удобный мессенджер. Можно сразу отправить фото участка, размеры или коротко описать задачу.</p>
+            <div class="direct-contact-actions">
+              <a href="tel:+79013811181">+7 (901) 381-11-81</a>
+              <a href="tel:+79997140877">+7 (999) 714-08-77</a>
+              <a href="https://web.max.ru/" target="_blank" rel="noopener">Max</a>
+              <a href="tg://resolve?phone=79969668691">Telegram</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-shell">
-        <div class="footer-main">
+        <div class="footer-main footer-main-modern">
           <div class="footer-brand">
             <div class="footer-brand-row">
-              <img class="footer-logo" src="./assets/site-logo-new.png" alt="Логотип компании" />
+              <img class="footer-logo" src="./assets/site-logo-new.png" alt="Логотип компании Сити Заборы" />
               <strong>Сити Заборы</strong>
             </div>
             <p>
-              Проектируем, изготавливаем и монтируем заборы, ворота и навесы
-              для частных домов в Москве и Московской области.
+              Делаем заборы, ворота, навесы и причалы под участок: подбираем материалы,
+              приезжаем на замер и обсуждаем решение напрямую по телефону или в мессенджере.
             </p>
-            <a class="footer-cta" href="./index.html#contact">Получить расчет</a>
+            <a class="footer-cta" href="./contacts.html">Написать для расчета</a>
           </div>
+
           <nav class="footer-column" aria-label="Направления">
             <span>Направления</span>
             <a href="./fences.html">Заборы</a>
             <a href="./gates.html">Ворота</a>
             <a href="./canopies.html">Навесы</a>
-            <a href="./portfolio.html">Портфолио</a>
+            <a href="./piers.html">Причалы</a>
+            <a href="./fences.html">Ремонт заборов</a>
+            <a href="./contacts.html">Подбор материалов</a>
           </nav>
-          <nav class="footer-column" aria-label="Услуги">
-            <span>Услуги</span>
-            <a href="./index.html#calculator">Расчет стоимости</a>
-            <a href="./index.html#process">Этапы работы</a>
-            <a href="./index.html#materials-sale">Материалы</a>
-            <a href="./index.html#repair">Ремонт заборов</a>
-          </nav>
-          <div class="footer-column">
+
+          <div class="footer-column footer-contact-column">
             <span>Контакты</span>
             <a href="tel:+79013811181">+7 (901) 381-11-81</a>
-            <a href="tel:+79969668691">Телеграм: +7 996 966-86-91</a>
-            <a href="mailto:cityzabory@mail.ru">cityzabory@mail.ru</a>
+            <a href="tel:+79997140877">+7 (999) 714-08-77</a>
+            <a href="https://web.max.ru/" target="_blank" rel="noopener">Написать в Max</a>
+            <a href="tg://resolve?phone=79969668691">Написать в Telegram</a>
             <p>Москва и Московская область</p>
           </div>
         </div>
+
         <div class="footer-bottom">
           <span>© 2026 Сити Заборы</span>
-          <span>Бесплатный замер, договор, гарантия на работы и изделия</span>
+          <span>Бесплатный выезд для расчета, договор и гарантия на работы</span>
         </div>
       </div>
     </footer>

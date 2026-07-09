@@ -281,15 +281,16 @@ textarea {
   width: 34px;
   height: 34px;
   border-radius: 999px;
-  background: rgba(27, 28, 29, 0.06);
+  background: transparent;
   overflow: hidden;
-  transition: transform 0.22s ease, background-color 0.22s ease, box-shadow 0.22s ease;
+  box-shadow: none;
+  transition: transform 0.22s ease;
 }
 
 .messenger-link:hover,
 .gates-stitch-messengers a:hover {
-  background: rgba(9, 76, 178, 0.1);
-  box-shadow: 0 10px 22px rgba(17, 18, 22, 0.1);
+  background: transparent;
+  box-shadow: none;
   transform: translateY(-2px) scale(1.04);
 }
 
@@ -301,7 +302,7 @@ textarea {
 }
 
 .messenger-link-telegram img {
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
 }
 
 .header-action,
@@ -6678,5 +6679,319 @@ body.is-measure-quiz-open {
   50% {
     opacity: 0.72;
     transform: translate3d(12px, -16px, 0) scale(1.4);
+  }
+}
+
+/* Global refresh: direct-contact flow, larger header logo, piers page */
+@media (min-width: 761px) {
+  body {
+    padding-top: 116px;
+  }
+
+  .header-inner {
+    grid-template-columns: minmax(260px, auto) minmax(360px, 1fr) auto;
+    gap: clamp(16px, 1.4vw, 26px);
+    padding: 8px 0;
+  }
+
+  .brand-logo-wrap {
+    width: 96px;
+    height: 96px;
+    box-shadow: 0 12px 28px rgba(17, 18, 22, 0.12);
+  }
+}
+
+.brand-title {
+  font-size: clamp(1.24rem, 1.15vw, 1.55rem);
+}
+
+.brand-subtitle {
+  font-size: 0.62rem;
+}
+
+.header-phones {
+  display: grid;
+  gap: 3px;
+  justify-items: end;
+}
+
+.header-phones .header-phone {
+  min-height: auto;
+  padding: 0;
+  border-radius: 0;
+  font-size: clamp(0.72rem, 0.66vw, 0.82rem);
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+.header-tools {
+  gap: clamp(8px, 0.85vw, 14px);
+}
+
+.site-nav {
+  gap: clamp(14px, 1.1vw, 22px);
+}
+
+.header-messengers {
+  gap: 4px;
+}
+
+.header-action {
+  min-height: 48px;
+}
+
+.direct-contact-card {
+  display: grid;
+  align-content: start;
+  gap: 18px;
+  padding: clamp(24px, 3vw, 38px);
+  border-radius: 20px;
+  border: 1px solid rgba(9, 76, 178, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 24px 70px rgba(17, 18, 22, 0.1);
+}
+
+.direct-contact-card-dark {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.direct-contact-kicker {
+  width: fit-content;
+  color: var(--primary);
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.direct-contact-card-dark .direct-contact-kicker {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.direct-contact-card h3 {
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  font-size: clamp(1.65rem, 2.2vw, 2.55rem);
+  line-height: 1.08;
+}
+
+.direct-contact-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.direct-contact-card-dark p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.direct-contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.direct-contact-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 12px;
+  background: rgba(9, 76, 178, 0.1);
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.direct-contact-card-dark .direct-contact-actions a {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--white);
+}
+
+.footer-main-modern {
+  grid-template-columns: minmax(300px, 1.4fr) minmax(180px, 0.8fr) minmax(220px, 0.9fr);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(245, 230, 220, 0.64)),
+    var(--surface-lowest);
+}
+
+.footer-main-modern .footer-column {
+  padding-left: clamp(0px, 1vw, 18px);
+}
+
+.footer-contact-column a {
+  font-weight: 800;
+}
+
+.contacts-hero .fences-hero-grid {
+  align-items: stretch;
+}
+
+.contacts-info-section .canopy-option-card a {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.pier-visual-card {
+  position: relative;
+  min-height: 430px;
+  overflow: hidden;
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 250, 247, 0.2)),
+    linear-gradient(155deg, #dff5ff 0 34%, #79bdd4 35% 58%, #143b52 59% 100%);
+  box-shadow: 0 28px 70px rgba(17, 18, 22, 0.12);
+}
+
+.pier-water {
+  position: absolute;
+  left: -8%;
+  right: -8%;
+  bottom: 0;
+  height: 48%;
+  background:
+    repeating-linear-gradient(170deg, rgba(255, 255, 255, 0.32) 0 2px, transparent 2px 20px),
+    linear-gradient(180deg, rgba(75, 158, 184, 0.72), rgba(19, 76, 104, 0.95));
+}
+
+.pier-deck {
+  position: absolute;
+  left: 13%;
+  right: 10%;
+  top: 40%;
+  height: 22%;
+  border-radius: 6px;
+  background:
+    repeating-linear-gradient(90deg, #8d6034 0 18px, #744b25 18px 21px),
+    #7b512a;
+  transform: skewY(-7deg);
+  box-shadow: 0 22px 34px rgba(17, 18, 22, 0.24);
+}
+
+.pier-post {
+  position: absolute;
+  width: 14px;
+  height: 44%;
+  bottom: 8%;
+  border-radius: 999px;
+  background: #29343d;
+}
+
+.pier-post-one {
+  left: 22%;
+}
+
+.pier-post-two {
+  left: 52%;
+  height: 50%;
+}
+
+.pier-post-three {
+  right: 18%;
+}
+
+.pier-visual-card span {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
+  color: var(--white);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pier-type-grid {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 520px;
+}
+
+.pier-card-media,
+.pier-mini-scene {
+  min-height: 260px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.7), transparent 42%),
+    linear-gradient(145deg, #d9f0f7 0 40%, #6ab0c8 41% 100%);
+}
+
+.pier-mini-scene {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1320px) and (min-width: 761px) {
+  .site-header .container.header-inner {
+    width: min(100% - 28px, 1580px);
+  }
+
+  .brand-logo-wrap {
+    width: 82px;
+    height: 82px;
+  }
+
+  body {
+    padding-top: 102px;
+  }
+
+  .brand-text {
+    display: none;
+  }
+
+  .site-nav {
+    gap: 13px;
+    font-size: 0.62rem;
+  }
+
+  .header-action {
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 980px) {
+  .header-phones {
+    justify-items: start;
+  }
+
+  .footer-main-modern {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .brand-logo-wrap {
+    width: 58px;
+    height: 58px;
+  }
+
+  .header-inner {
+    display: flex;
+    gap: 14px;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+
+  .header-phones {
+    width: 100%;
+    justify-items: start;
+  }
+
+  .header-phones .header-phone {
+    flex: 0 0 auto;
+  }
+
+  .direct-contact-card {
+    padding: 22px;
+  }
+
+  .pier-visual-card {
+    min-height: 320px;
   }
 }

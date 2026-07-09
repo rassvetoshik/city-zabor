@@ -19,9 +19,9 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="#top">
+        <a class="brand" href="./index.html">
           <span class="brand-logo-wrap">
-            <img class="brand-logo" src="./assets/site-logo-new.png" alt="Логотип компании" />
+            <img class="brand-logo" src="./assets/site-logo-new.png" alt="Логотип компании Сити Заборы" />
           </span>
           <span class="brand-text">
             <span class="brand-title">Сити Заборы</span>
@@ -32,15 +32,17 @@
         <nav class="site-nav" aria-label="Основная навигация">
           <a class="is-active" href="./index.html">Главная</a>
           <a href="./fences.html">Заборы</a>
-          <a href="./gates.html">Ворота</a>
           <a href="./canopies.html">Навесы</a>
+          <a href="./piers.html">Пирсы</a>
           <a href="./portfolio.html">Портфолио</a>
-          <a href="#contact">Контакты</a>
+          <a href="./contacts.html">Контакты</a>
         </nav>
 
         <div class="header-tools">
-          <a class="header-calc" href="#calculator">Калькулятор расчета</a>
-          <a class="header-phone" href="tel:+79013811181">+7 (901) 381-11-81</a>
+          <div class="header-phones" aria-label="Телефоны">
+            <a class="header-phone" href="tel:+79013811181">+7 (901) 381-11-81</a>
+            <a class="header-phone" href="tel:+79997140877">+7 (999) 714-08-77</a>
+          </div>
           <div class="header-messengers" aria-label="Мессенджеры">
             <a class="messenger-link" href="tel:+79013811181" aria-label="Max">
               <img src="./assets/max-logo.webp" alt="" />
@@ -49,7 +51,7 @@
               <img src="./assets/telegram-logo.webp" alt="" />
             </a>
           </div>
-          <a class="header-action" href="#contact">Оставить заявку</a>
+          <a class="header-action" href="./contacts.html">Консультация</a>
         </div>
       </div>
     </header>
@@ -83,7 +85,7 @@
                   для частных домов
                 </h1>
                 <div class="hero-actions">
-                  <a class="button button-primary" href="#calculator">Рассчитать стоимость</a>
+                  <a class="button button-primary" href="./contacts.html">Консультация</a>
                   <a class="button button-secondary" href="#services">Наши направления</a>
                 </div>
               </div>
@@ -328,7 +330,7 @@
               <strong>По договору</strong>
               <span>сроки, комплектация и гарантия фиксируются заранее</span>
             </div>
-            <a class="process-summary-link" href="#calculator">Рассчитать проект</a>
+            <a class="process-summary-link" href="./contacts.html">Консультация</a>
           </div>
         </div>
       </section>
@@ -409,188 +411,6 @@
         </div>
       </section>
 
-      <section class="section calculator-section" id="calculator">
-        <div class="container">
-          <div class="calculator-card">
-            <div class="calculator-head">
-              <h2>Рассчитайте стоимость вашего проекта за 1 минуту</h2>
-              <p>Пройдите короткий выбор, а в конце оставьте контакты для точного расчета.</p>
-            </div>
-
-            <div class="calculator-progress" aria-label="Шаги расчета">
-              <span class="is-active"></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-
-            <form class="calculator-wizard" data-calculator>
-              <div class="calculator-step is-active" data-step="0">
-                <h3>1. Выберите направление</h3>
-                <div class="calculator-options calculator-options-media">
-                  <label class="option-card option-card-media">
-                    <input type="radio" name="direction" value="fences" checked />
-                    <span>
-                      <img src="./assets/catalog-fences.webp" alt="" />
-                      <strong>Заборы</strong>
-                    </span>
-                  </label>
-                  <label class="option-card option-card-media">
-                    <input type="radio" name="direction" value="gates" />
-                    <span>
-                      <img src="./assets/catalog-gates.webp" alt="" />
-                      <strong>Ворота</strong>
-                    </span>
-                  </label>
-                  <label class="option-card option-card-media">
-                    <input type="radio" name="direction" value="canopies" />
-                    <span>
-                      <img src="./assets/catalog-canopies.webp" alt="" />
-                      <strong>Навесы</strong>
-                    </span>
-                  </label>
-                  <label class="option-card option-card-media">
-                    <input type="radio" name="direction" value="repair" />
-                    <span>
-                      <img src="./assets/montage-1.webp" alt="" />
-                      <strong>Ремонт</strong>
-                    </span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="calculator-step" data-step="1">
-                <h3>2. Уточните тип изделия</h3>
-                <div class="calculator-detail-group is-active" data-calc-group="fences">
-                  <div class="calculator-options calculator-options-media">
-                    <label class="option-card option-card-media">
-                      <input type="radio" name="fence-kind" value="Профнастил" checked />
-                      <span><img src="./assets/fence-brick.webp" alt="" /><strong>Профнастил</strong></span>
-                    </label>
-                    <label class="option-card option-card-media">
-                      <input type="radio" name="fence-kind" value="Металлический штакетник" />
-                      <span><img src="./assets/euro-fence.webp" alt="" /><strong>Металлический штакетник</strong></span>
-                    </label>
-                    <label class="option-card option-card-media">
-                      <input type="radio" name="fence-kind" value="Забор-жалюзи" />
-                      <span><img src="./assets/hero-fence.webp" alt="" /><strong>Забор-жалюзи</strong></span>
-                    </label>
-                    <label class="option-card option-card-media">
-                      <input type="radio" name="fence-kind" value="3D сетка" />
-                      <span><img src="./assets/fence-grey.webp" alt="" /><strong>3D сетка</strong></span>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="calculator-detail-group" data-calc-group="gates">
-                  <div class="calculator-options calculator-options-media">
-                    <label class="option-card option-card-media">
-                      <input type="radio" name="gate-kind" value="Откатные ворота" checked />
-                      <span><img src="./assets/catalog-gates.webp" alt="" /><strong>Откатные</strong></span>
-                    </label>
-                    <label class="option-card option-card-media">
-                      <input type="radio" name="gate-kind" value="Распашные ворота" />
-                      <span><img src="./assets/gate-frame.webp" alt="" /><strong>Распашные</strong></span>
-                    </label>
-                    <label class="option-card option-card-media">
-                      <input type="radio" name="gate-kind" value="Пенал для откатных ворот" />
-                      <span><img src="./assets/gates-project-orion-stitch.webp" alt="" /><strong>Пенал</strong></span>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="calculator-detail-group" data-calc-group="canopies">
-                  <div class="calculator-options calculator-options-media">
-                    <label class="option-card option-card-media">
-                      <input type="radio" name="canopy-kind" value="Навес для авто" checked />
-                      <span><img src="./assets/catalog-canopies.webp" alt="" /><strong>Для авто</strong></span>
-                    </label>
-                    <label class="option-card option-card-media">
-                      <input type="radio" name="canopy-kind" value="Навес для террасы" />
-                      <span><img src="./assets/canopy.webp" alt="" /><strong>Для террасы</strong></span>
-                    </label>
-                    <label class="option-card option-card-media">
-                      <input type="radio" name="canopy-kind" value="Козырек входной группы" />
-                      <span><img src="./assets/hero-canopy-evening.webp" alt="" /><strong>Козырек</strong></span>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="calculator-detail-group" data-calc-group="repair">
-                  <div class="calculator-options calculator-options-media">
-                    <label class="option-card option-card-media">
-                      <input type="radio" name="repair-kind" value="Ремонт забора" checked />
-                      <span><img src="./assets/fence-brown.webp" alt="" /><strong>Ремонт забора</strong></span>
-                    </label>
-                    <label class="option-card option-card-media">
-                      <input type="radio" name="repair-kind" value="Замена секций" />
-                      <span><img src="./assets/montage-2.webp" alt="" /><strong>Замена секций</strong></span>
-                    </label>
-                    <label class="option-card option-card-media">
-                      <input type="radio" name="repair-kind" value="Автоматика ворот" />
-                      <span><img src="./assets/gates-welding-stitch.webp" alt="" /><strong>Автоматика</strong></span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="calculator-step" data-step="2">
-                <h3>3. Укажите параметры</h3>
-                <div class="calculator-fields">
-                  <label>
-                    <span>Примерная длина / размер</span>
-                    <input type="text" name="size" placeholder="Например: 40 пог. м или 6 x 4 м" />
-                  </label>
-                  <label>
-                    <span>Высота / назначение</span>
-                    <input type="text" name="purpose" placeholder="Например: 2 м, приватность, автонавес" />
-                  </label>
-                  <label>
-                    <span>Нужны ворота или автоматика?</span>
-                    <select name="automation">
-                      <option>Пока не знаю</option>
-                      <option>Да, нужны ворота</option>
-                      <option>Да, нужна автоматика</option>
-                      <option>Нет, не нужны</option>
-                    </select>
-                  </label>
-                  <label>
-                    <span>Где находится объект?</span>
-                    <input type="text" name="location" placeholder="Москва или Московская область" />
-                  </label>
-                </div>
-              </div>
-
-              <div class="calculator-step" data-step="3">
-                <h3>4. Контакты для точной стоимости</h3>
-                <p class="calculator-final-text">
-                  После отправки уточним детали, бесплатно сориентируем по материалам и подготовим расчет.
-                </p>
-                <div class="calculator-fields">
-                  <label>
-                    <span>Ваше имя</span>
-                    <input type="text" name="name" placeholder="Иван Иванов" />
-                  </label>
-                  <label>
-                    <span>Телефон</span>
-                    <input type="tel" name="phone" placeholder="+7 901 381-11-81" />
-                  </label>
-                  <label>
-                    <span>Комментарий</span>
-                    <textarea name="comment" rows="4" placeholder="Что важно учесть в проекте?"></textarea>
-                  </label>
-                </div>
-              </div>
-            </form>
-
-            <div class="calculator-footer">
-              <button class="button button-ghost" type="button" data-calc-prev>Назад</button>
-              <button class="button button-primary" type="button" data-calc-next>Далее</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="section showcase-section">
         <div class="container showcase-grid">
           <article class="showcase-card">
@@ -656,52 +476,34 @@
             </div>
           </div>
 
-          <form class="contact-form">
-            <label>
-              <span>Имя</span>
-              <input type="text" placeholder="Иван Иванов" />
-            </label>
-            <label>
-              <span>Телефон</span>
-              <input type="tel" placeholder="+7 901 381-11-81" />
-            </label>
-            <label>
-              <span>Тип работ</span>
-              <select>
-                <option>Забор</option>
-                <option>Ворота</option>
-                <option>Навес</option>
-                <option>Нужна консультация</option>
-              </select>
-            </label>
-            <label>
-              <span>Комментарий</span>
-              <textarea rows="5" placeholder="Кратко опишите ваш проект"></textarea>
-            </label>
-            <button class="button button-primary button-full" type="button">
-              Отправить заявку
-            </button>
-            <p class="form-note">
-              Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.
-            </p>
-          </form>
+          <div class="direct-contact-card direct-contact-card-dark">
+            <span class="direct-contact-kicker">без формы и ожидания</span>
+            <h3>Напишите нам и получите бесплатный выезд для расчета</h3>
+            <p>Позвоните или напишите в удобный мессенджер. Можно сразу отправить фото участка, размеры или коротко описать задачу.</p>
+            <div class="direct-contact-actions">
+              <a href="tel:+79013811181">+7 (901) 381-11-81</a>
+              <a href="tel:+79997140877">+7 (999) 714-08-77</a>
+              <a href="https://web.max.ru/" target="_blank" rel="noopener">Max</a>
+              <a href="tg://resolve?phone=79969668691">Telegram</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-shell">
-        <div class="footer-main">
+        <div class="footer-main footer-main-modern">
           <div class="footer-brand">
             <div class="footer-brand-row">
-              <img class="footer-logo" src="./assets/site-logo-new.png" alt="Логотип компании" />
+              <img class="footer-logo" src="./assets/site-logo-new.png" alt="Логотип компании Сити Заборы" />
               <strong>Сити Заборы</strong>
             </div>
             <p>
-              Проектируем, изготавливаем и монтируем заборы, ворота и навесы
-              для частных домов в Москве и Московской области.
+              Делаем заборы, ворота, навесы и причалы под участок: подбираем материалы,
+              приезжаем на замер и обсуждаем решение напрямую по телефону или в мессенджере.
             </p>
-            <a class="footer-cta" href="./index.html#contact">Получить расчет</a>
+            <a class="footer-cta" href="./contacts.html">Написать для расчета</a>
           </div>
 
           <nav class="footer-column" aria-label="Направления">
@@ -709,34 +511,29 @@
             <a href="./fences.html">Заборы</a>
             <a href="./gates.html">Ворота</a>
             <a href="./canopies.html">Навесы</a>
-            <a href="./portfolio.html">Портфолио</a>
+            <a href="./piers.html">Причалы</a>
+            <a href="./fences.html">Ремонт заборов</a>
+            <a href="./contacts.html">Подбор материалов</a>
           </nav>
 
-          <nav class="footer-column" aria-label="Услуги">
-            <span>Услуги</span>
-            <a href="./index.html#calculator">Расчет стоимости</a>
-            <a href="./index.html#process">Этапы работы</a>
-            <a href="./index.html#materials-sale">Материалы</a>
-            <a href="./index.html#repair">Ремонт заборов</a>
-          </nav>
-
-          <div class="footer-column">
+          <div class="footer-column footer-contact-column">
             <span>Контакты</span>
             <a href="tel:+79013811181">+7 (901) 381-11-81</a>
-            <a href="tel:+79969668691">Телеграм: +7 996 966-86-91</a>
-            <a href="mailto:cityzabory@mail.ru">cityzabory@mail.ru</a>
+            <a href="tel:+79997140877">+7 (999) 714-08-77</a>
+            <a href="https://web.max.ru/" target="_blank" rel="noopener">Написать в Max</a>
+            <a href="tg://resolve?phone=79969668691">Написать в Telegram</a>
             <p>Москва и Московская область</p>
           </div>
         </div>
 
         <div class="footer-bottom">
           <span>© 2026 Сити Заборы</span>
-          <span>Бесплатный замер, договор, гарантия на работы и изделия</span>
+          <span>Бесплатный выезд для расчета, договор и гарантия на работы</span>
         </div>
       </div>
     </footer>
     <script>
-      (() => {
+(() => {
         const track = document.querySelector("[data-hero-track]");
         if (!track) return;
 
@@ -763,61 +560,6 @@
             activeIndex = nextIndex;
           }, 950);
         }, 5000);
-      })();
-
-      (() => {
-        const calculator = document.querySelector("[data-calculator]");
-        if (!calculator) return;
-
-        const steps = Array.from(calculator.querySelectorAll(".calculator-step"));
-        const progressItems = Array.from(document.querySelectorAll(".calculator-progress span"));
-        const prevButton = document.querySelector("[data-calc-prev]");
-        const nextButton = document.querySelector("[data-calc-next]");
-        const detailGroups = Array.from(calculator.querySelectorAll("[data-calc-group]"));
-        let activeStep = 0;
-
-        const updateDetailGroups = () => {
-          const direction = calculator.querySelector('input[name="direction"]:checked')?.value || "fences";
-          detailGroups.forEach(group => {
-            group.classList.toggle("is-active", group.dataset.calcGroup === direction);
-          });
-        };
-
-        const updateStep = () => {
-          steps.forEach((step, index) => {
-            step.classList.toggle("is-active", index === activeStep);
-          });
-          progressItems.forEach((item, index) => {
-            item.classList.toggle("is-active", index <= activeStep);
-          });
-          prevButton.disabled = activeStep === 0;
-          prevButton.style.visibility = activeStep === 0 ? "hidden" : "visible";
-          nextButton.textContent = activeStep === steps.length - 1 ? "Отправить заявку" : "Далее";
-          updateDetailGroups();
-        };
-
-        calculator.addEventListener("change", event => {
-          if (event.target.name === "direction") updateDetailGroups();
-        });
-
-        prevButton.addEventListener("click", () => {
-          activeStep = Math.max(0, activeStep - 1);
-          updateStep();
-        });
-
-        nextButton.addEventListener("click", () => {
-          if (activeStep < steps.length - 1) {
-            activeStep += 1;
-            updateStep();
-            return;
-          }
-
-          nextButton.textContent = "Заявка подготовлена";
-          nextButton.disabled = true;
-          calculator.classList.add("is-complete");
-        });
-
-        updateStep();
       })();
     </script>
     <script src="./assets/site-effects.js?v=20260618-no-quiz"></script>
