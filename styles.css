@@ -6995,3 +6995,352 @@ body.is-measure-quiz-open {
     min-height: 320px;
   }
 }
+
+/* Polish pass: header messengers, contacts page, piers photo/process */
+.header-phones {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
+  line-height: 1.1;
+}
+
+.header-messengers .messenger-link {
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible;
+}
+
+.header-messengers .messenger-link img {
+  mix-blend-mode: multiply;
+  filter: contrast(1.18) saturate(1.05);
+}
+
+.header-messengers .messenger-link-telegram img {
+  mix-blend-mode: multiply;
+}
+
+.contacts-page {
+  background:
+    radial-gradient(circle at 82% 16%, rgba(9, 76, 178, 0.12), transparent 28rem),
+    radial-gradient(circle at 18% 30%, rgba(109, 94, 0, 0.12), transparent 24rem),
+    var(--page-gradient);
+}
+
+.contacts-hero {
+  padding: clamp(80px, 8vw, 132px) 0 68px;
+}
+
+.contacts-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.72fr);
+  gap: clamp(36px, 5vw, 86px);
+  align-items: center;
+}
+
+.contacts-hero-copy h1 {
+  max-width: 11ch;
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  font-size: clamp(3.3rem, 6vw, 6.7rem);
+  line-height: 0.94;
+}
+
+.contacts-hero-copy p {
+  max-width: 56ch;
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.contacts-primary-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.contacts-logo-panel {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: clamp(360px, 42vw, 560px);
+  overflow: hidden;
+  border-radius: 28px;
+  background:
+    linear-gradient(145deg, rgba(8, 54, 39, 0.96), rgba(12, 34, 27, 0.98)),
+    var(--surface-dark);
+  box-shadow: 0 28px 80px rgba(17, 18, 22, 0.18);
+}
+
+.contacts-logo-panel::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(224, 180, 83, 0.4);
+  border-radius: 22px;
+}
+
+.contacts-logo-panel img {
+  width: min(82%, 430px);
+  border-radius: 50%;
+  filter: drop-shadow(0 26px 50px rgba(0, 0, 0, 0.32));
+}
+
+.contacts-logo-panel span {
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  color: #e5bf61;
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.contacts-methods {
+  padding: 34px 0 92px;
+}
+
+.contacts-method-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.contacts-method-card {
+  display: grid;
+  gap: 12px;
+  min-height: 220px;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(139, 112, 76, 0.14);
+  box-shadow: 0 20px 54px rgba(67, 51, 28, 0.08);
+}
+
+.contacts-method-main {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.contacts-method-card span {
+  color: var(--primary);
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contacts-method-main span {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.contacts-method-card strong {
+  align-self: end;
+  font-family: "Noto Serif", serif;
+  font-size: clamp(1.42rem, 1.8vw, 2rem);
+  line-height: 1.08;
+}
+
+.contacts-method-card em {
+  color: var(--muted);
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.contacts-method-main em {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.contacts-service-area {
+  padding: 0 0 108px;
+}
+
+.contacts-service-shell {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1fr);
+  gap: 34px;
+  align-items: center;
+  padding: clamp(28px, 4vw, 48px);
+  border-radius: 24px;
+  background: var(--surface-dark);
+  color: var(--white);
+}
+
+.contacts-service-shell h2 {
+  margin: 10px 0 0;
+  font-family: "Noto Serif", serif;
+  font-size: clamp(2.1rem, 4vw, 4rem);
+  line-height: 0.98;
+}
+
+.contacts-service-shell p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 1.04rem;
+  line-height: 1.75;
+}
+
+.pier-photo-card {
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 28px 70px rgba(17, 18, 22, 0.14);
+}
+
+.pier-photo-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  object-fit: cover;
+}
+
+.pier-photo-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 42%, rgba(8, 17, 22, 0.72));
+}
+
+.pier-photo-caption {
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: end;
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.pier-photo-caption strong {
+  color: var(--primary);
+  font-family: "Noto Serif", serif;
+  font-size: 1.4rem;
+}
+
+.pier-photo-caption span {
+  max-width: 28ch;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.pier-card-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
+}
+
+.pier-process-section {
+  padding: 96px 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(245, 230, 220, 0.48)),
+    var(--page-gradient);
+}
+
+.pier-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.pier-process-card {
+  position: relative;
+  min-height: 270px;
+  padding: 28px;
+  border-radius: 22px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(9, 76, 178, 0.12);
+  box-shadow: 0 22px 58px rgba(67, 51, 28, 0.08);
+}
+
+.pier-process-card::after {
+  content: "";
+  position: absolute;
+  right: -42px;
+  bottom: -58px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgba(9, 76, 178, 0.08);
+}
+
+.pier-process-card span {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: var(--primary);
+  color: var(--white);
+  font-family: "Public Sans", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.pier-process-card h3 {
+  margin: 30px 0 12px;
+  font-family: "Noto Serif", serif;
+  font-size: clamp(1.45rem, 2vw, 2.1rem);
+  line-height: 1.05;
+}
+
+.pier-process-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 1100px) {
+  .contacts-hero-grid,
+  .contacts-service-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts-method-grid,
+  .pier-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .header-phones {
+    align-items: flex-start;
+  }
+
+  .contacts-hero-copy h1 {
+    max-width: 100%;
+  }
+
+  .contacts-method-grid,
+  .pier-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pier-photo-card,
+  .pier-photo-card img {
+    min-height: 330px;
+  }
+
+  .pier-photo-caption {
+    display: grid;
+  }
+
+  .pier-photo-caption span {
+    text-align: left;
+  }
+}
