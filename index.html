@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Marck+Script&family=Noto+Serif:wght@400;600;700&family=Public+Sans:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260709-no-method-cards" />
+    <link rel="stylesheet" href="./styles.css?v=20260713-piers-icons" />
   </head>
   <body>
     <header class="site-header">
@@ -25,16 +25,15 @@
           </span>
           <span class="brand-text">
             <span class="brand-title">Сити Заборы</span>
-            <span class="brand-subtitle">заборы, ворота, навесы</span>
           </span>
         </a>
 
         <nav class="site-nav" aria-label="Основная навигация">
           <a class="is-active" href="./index.html">Главная</a>
           <a href="./fences.html">Заборы</a>
+          <a href="./gates.html">Ворота</a>
           <a href="./canopies.html">Навесы</a>
-          <a href="./piers.html">Пирсы</a>
-          <a href="./portfolio.html">Портфолио</a>
+          <a href="./piers.html">Причалы</a>
           <a href="./contacts.html">Контакты</a>
         </nav>
 
@@ -49,6 +48,9 @@
             </a>
             <a class="messenger-link messenger-link-telegram" href="tel:+79969668691" aria-label="Телеграм">
               <img src="./assets/telegram-logo-black.png" alt="" />
+            </a>
+            <a class="messenger-link messenger-link-mail" href="mailto:cityzabory@mail.ru" aria-label="Почта">
+              <img src="./assets/mail-icon.png" alt="" />
             </a>
           </div>
           <a class="header-action" href="./contacts.html">Консультация</a>
@@ -66,7 +68,7 @@
                 <img class="hero-slide" src="./assets/hero-slide-1.webp" alt="Навес и забор на частном участке" />
                 <img class="hero-slide" src="./assets/hero-slide-2.webp" alt="Забор жалюзи с кирпичными столбами" />
                 <img class="hero-slide" src="./assets/hero-slide-3.webp" alt="Современный забор у частного дома" />
-                <img class="hero-slide" src="./assets/hero-canopy-evening.webp" alt="Навес для автомобилей на участке вечером" />
+                <img class="hero-slide" src="./assets/hero-canopy-evening.jpg" alt="Навес для автомобилей на участке вечером" />
               </div>
             </div>
             <div class="hero-overlay"></div>
@@ -158,9 +160,9 @@
         <div class="container metrics-wrap">
           <div class="metrics-showcase">
             <div class="metrics-media">
-              <img src="./assets/portfolio-modern-fence.webp" alt="Готовый современный забор на частном участке" />
-              <img class="metrics-thumb metrics-thumb-one" src="./assets/portfolio-louver-fence.webp" alt="Фрагмент забора жалюзи" />
-              <img class="metrics-thumb metrics-thumb-two" src="./assets/portfolio-canopy-evening.webp" alt="Навес и ограждение на участке вечером" />
+              <img src="./assets/portfolio-modern-fence.jpg" alt="Готовый современный забор на частном участке" />
+              <img class="metrics-thumb metrics-thumb-one" src="./assets/portfolio-louver-fence.jpg" alt="Фрагмент забора жалюзи" />
+              <img class="metrics-thumb metrics-thumb-two" src="./assets/portfolio-canopy-evening.jpg" alt="Навес и ограждение на участке вечером" />
               <span class="metrics-badge">100+ реальных фото и объектов</span>
             </div>
 
@@ -252,14 +254,14 @@
               </div>
             </a>
 
-            <a class="service-card service-card-wide" href="./portfolio.html">
-              <img src="./assets/portfolio-louver-fence.webp" alt="Реальный объект с ограждением" />
-              <span class="service-card-action">Смотреть работы</span>
+            <a class="service-card service-card-wide service-card-diagram" href="./piers.html">
+              <img src="./assets/pier-diagram.jpg" alt="Схема причала на металлическом каркасе" />
+              <span class="service-card-action">Перейти</span>
               <div class="service-card-copy">
-                <h3>Портфолио по реальным объектам</h3>
+                <h3>Причалы на металлическом каркасе</h3>
                 <p>
-                  Не стоки и не рендеры. В основе сайта реальные фотографии ваших работ,
-                  которые потом можно расширять через админку.
+                  Свайное основание, металлический каркас, настил и безопасный
+                  подход к воде для частного участка.
                 </p>
               </div>
             </a>
@@ -461,17 +463,17 @@
                 <div class="contact-messenger-links">
                   <a href="tel:+79013811181" aria-label="Max: +7 901 381-11-81">
                     <img src="./assets/max-logo-black.svg" alt="" />
-                    <strong>+7 901 381-11-81</strong>
                   </a>
                   <a href="tel:+79969668691" aria-label="Телеграм: +7 996 966-86-91">
                     <img src="./assets/telegram-logo-black.png" alt="" />
-                    <strong>+7 996 966-86-91</strong>
                   </a>
                 </div>
               </div>
               <div>
                 <span>Почта</span>
-                <strong>cityzabory@mail.ru</strong>
+                <a class="contact-icon-link contact-mail-link" href="mailto:cityzabory@mail.ru">
+                  <img src="./assets/mail-icon.png" alt="" />
+                </a>
               </div>
             </div>
           </div>
@@ -483,8 +485,15 @@
             <div class="direct-contact-actions">
               <a href="tel:+79013811181">+7 (901) 381-11-81</a>
               <a href="tel:+79997140877">+7 (999) 714-08-77</a>
-              <a href="https://web.max.ru/" target="_blank" rel="noopener">Max</a>
-              <a href="tg://resolve?phone=79969668691">Telegram</a>
+              <a class="direct-contact-icon" href="https://web.max.ru/" target="_blank" rel="noopener" aria-label="Max">
+                <img src="./assets/max-logo-black.svg" alt="" />
+              </a>
+              <a class="direct-contact-icon" href="tg://resolve?phone=79969668691" aria-label="Telegram">
+                <img src="./assets/telegram-logo-black.png" alt="" />
+              </a>
+              <a class="direct-contact-icon direct-contact-mail" href="mailto:cityzabory@mail.ru" aria-label="Почта">
+                <img src="./assets/mail-icon.png" alt="" />
+              </a>
             </div>
           </div>
         </div>
@@ -516,8 +525,17 @@
             <span>Контакты</span>
             <a href="tel:+79013811181">+7 (901) 381-11-81</a>
             <a href="tel:+79997140877">+7 (999) 714-08-77</a>
-            <a href="https://web.max.ru/" target="_blank" rel="noopener">Написать в Max</a>
-            <a href="tg://resolve?phone=79969668691">Написать в Telegram</a>
+            <div class="footer-social-icons" aria-label="Социальные сети и почта">
+              <a href="https://web.max.ru/" target="_blank" rel="noopener" aria-label="Max">
+                <img src="./assets/max-logo-black.svg" alt="" />
+              </a>
+              <a href="tg://resolve?phone=79969668691" aria-label="Telegram">
+                <img src="./assets/telegram-logo-black.png" alt="" />
+              </a>
+              <a class="footer-mail-link" href="mailto:cityzabory@mail.ru" aria-label="Почта">
+              <img src="./assets/mail-icon.png" alt="" />
+              </a>
+            </div>
             <p>Москва и Московская область</p>
           </div>
         </div>
@@ -558,6 +576,6 @@
         }, 5000);
       })();
     </script>
-    <script src="./assets/site-effects.js?v=20260618-no-quiz"></script>
+    <script src="./assets/site-effects.js?v=20260713-filters"></script>
   </body>
 </html>

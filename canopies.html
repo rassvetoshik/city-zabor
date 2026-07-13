@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:wght@400;600;700&family=Public+Sans:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260709-no-method-cards" />
+    <link rel="stylesheet" href="./styles.css?v=20260713-piers-icons" />
   </head>
   <body>
     <header class="site-header">
@@ -25,16 +25,15 @@
           </span>
           <span class="brand-text">
             <span class="brand-title">Сити Заборы</span>
-            <span class="brand-subtitle">заборы, ворота, навесы</span>
           </span>
         </a>
 
         <nav class="site-nav" aria-label="Основная навигация">
           <a href="./index.html">Главная</a>
           <a href="./fences.html">Заборы</a>
+          <a href="./gates.html">Ворота</a>
           <a class="is-active" href="./canopies.html">Навесы</a>
-          <a href="./piers.html">Пирсы</a>
-          <a href="./portfolio.html">Портфолио</a>
+          <a href="./piers.html">Причалы</a>
           <a href="./contacts.html">Контакты</a>
         </nav>
 
@@ -49,6 +48,9 @@
             </a>
             <a class="messenger-link messenger-link-telegram" href="tel:+79969668691" aria-label="Телеграм">
               <img src="./assets/telegram-logo-black.png" alt="" />
+            </a>
+            <a class="messenger-link messenger-link-mail" href="mailto:cityzabory@mail.ru" aria-label="Почта">
+              <img src="./assets/mail-icon.png" alt="" />
             </a>
           </div>
           <a class="header-action" href="./contacts.html">Консультация</a>
@@ -74,7 +76,7 @@
           </div>
 
           <div class="fences-hero-panel">
-            <img src="./assets/hero-canopy-evening.webp" alt="Металлический навес для автомобилей у дома" />
+            <img src="./assets/hero-canopy-evening.jpg" alt="Металлический навес для автомобилей у дома" />
           </div>
         </div>
       </section>
@@ -108,8 +110,17 @@
             </p>
           </div>
 
+          <div class="product-filter" data-product-filter aria-label="Фильтр навесов">
+            <button class="is-active" type="button" data-filter-value="all">Все</button>
+            <button type="button" data-filter-value="car">Для авто</button>
+            <button type="button" data-filter-value="house">К дому</button>
+            <button type="button" data-filter-value="rest">Для отдыха</button>
+            <button type="button" data-filter-value="compact">Компактные</button>
+            <button type="button" data-filter-value="large">Большие</button>
+          </div>
+
           <div class="fences-type-grid">
-            <article class="fences-type-card" data-fence-detail="canopy-car">
+            <article class="fences-type-card" data-fence-detail="canopy-car" data-filter-tags="car compact">
               <div class="fences-type-media">
                 <img src="./assets/canopies/user-canopy-car.webp" alt="Навес для автомобиля" />
               </div>
@@ -126,7 +137,7 @@
               </div>
             </article>
 
-            <article class="fences-type-card" data-fence-detail="canopy-two-cars">
+            <article class="fences-type-card" data-fence-detail="canopy-two-cars" data-filter-tags="car large">
               <div class="fences-type-media">
                 <img src="./assets/canopies/user-canopy-two-cars-winter.webp" alt="Навес на две машины" />
               </div>
@@ -143,7 +154,7 @@
               </div>
             </article>
 
-            <article class="fences-type-card" data-fence-detail="canopy-house">
+            <article class="fences-type-card" data-fence-detail="canopy-house" data-filter-tags="house car">
               <div class="fences-type-media">
                 <img src="./assets/canopies/user-canopy-house-main.webp" alt="Навес к дому" />
               </div>
@@ -160,7 +171,7 @@
               </div>
             </article>
 
-            <article class="fences-type-card" data-fence-detail="canopy-terrace">
+            <article class="fences-type-card" data-fence-detail="canopy-terrace" data-filter-tags="house rest">
               <div class="fences-type-media">
                 <img src="./assets/canopies/user-canopy-terrace-main.webp" alt="Навес для террасы" />
               </div>
@@ -177,7 +188,7 @@
               </div>
             </article>
 
-            <article class="fences-type-card" data-fence-detail="canopy-entrance">
+            <article class="fences-type-card" data-fence-detail="canopy-entrance" data-filter-tags="house compact">
               <div class="fences-type-media">
                 <img src="./assets/canopies/user-canopy-entrance.webp" alt="Навес над крыльцом" />
               </div>
@@ -194,7 +205,7 @@
               </div>
             </article>
 
-            <article class="fences-type-card" data-fence-detail="canopy-bbq">
+            <article class="fences-type-card" data-fence-detail="canopy-bbq" data-filter-tags="rest large">
               <div class="fences-type-media">
                 <img src="./assets/canopies/user-canopy-bbq-main.webp" alt="Навес для барбекю" />
               </div>
@@ -344,8 +355,15 @@
             <div class="direct-contact-actions">
               <a href="tel:+79013811181">+7 (901) 381-11-81</a>
               <a href="tel:+79997140877">+7 (999) 714-08-77</a>
-              <a href="https://web.max.ru/" target="_blank" rel="noopener">Max</a>
-              <a href="tg://resolve?phone=79969668691">Telegram</a>
+              <a class="direct-contact-icon" href="https://web.max.ru/" target="_blank" rel="noopener" aria-label="Max">
+                <img src="./assets/max-logo-black.svg" alt="" />
+              </a>
+              <a class="direct-contact-icon" href="tg://resolve?phone=79969668691" aria-label="Telegram">
+                <img src="./assets/telegram-logo-black.png" alt="" />
+              </a>
+              <a class="direct-contact-icon direct-contact-mail" href="mailto:cityzabory@mail.ru" aria-label="Почта">
+                <img src="./assets/mail-icon.png" alt="" />
+              </a>
             </div>
           </div>
         </div>
@@ -379,8 +397,11 @@
             <span>Контакты</span>
             <a href="tel:+79013811181">+7 (901) 381-11-81</a>
             <a href="tel:+79997140877">+7 (999) 714-08-77</a>
-            <a href="https://web.max.ru/" target="_blank" rel="noopener">Написать в Max</a>
-            <a href="tg://resolve?phone=79969668691">Написать в Telegram</a>
+            <div class="footer-social-icons" aria-label="Социальные сети и почта">
+              <a href="https://web.max.ru/" target="_blank" rel="noopener" aria-label="Max"><img src="./assets/max-logo-black.svg" alt="" /></a>
+              <a href="tg://resolve?phone=79969668691" aria-label="Telegram"><img src="./assets/telegram-logo-black.png" alt="" /></a>
+              <a class="footer-mail-link" href="mailto:cityzabory@mail.ru" aria-label="Почта"><img src="./assets/mail-icon.png" alt="" /></a>
+            </div>
             <p>Москва и Московская область</p>
           </div>
         </div>
@@ -447,6 +468,6 @@
         ]
       }
     </script>
-    <script src="./assets/site-effects.js?v=20260618-no-quiz"></script>
+    <script src="./assets/site-effects.js?v=20260713-filters"></script>
   </body>
 </html>
