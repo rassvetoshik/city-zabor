@@ -140,8 +140,7 @@
       imageAlt: "Забор из профнастила с воротами и калиткой",
       gallery: [
         { src: "./assets/fence-profile-gate-wicket.png", alt: "Забор из профнастила с воротами и калиткой" },
-        { src: "./assets/fence-profile-brick-posts.png", alt: "Забор из профнастила с кирпичными столбами" },
-        { src: "./assets/long-fence.webp", alt: "Длинная линия металлического забора" }
+        { src: "./assets/fence-profile-brick-posts.png", alt: "Забор из профнастила с кирпичными столбами" }
       ],
       lead: "Практичный глухой забор для тех, кому нужно быстро закрыть участок от обзора и получить понятную смету.",
       text: "Профлист крепится к металлическим лагам на столбах и хорошо перекрывает вид с улицы. Для частных домов и дач чаще выбирают высоту 1,8-2 м, профиль C8 или C20, одно- или двустороннее полимерное покрытие. Верх можно закрыть П-образной планкой, а каркас дополнительно покрасить.",
@@ -260,7 +259,8 @@
       gallery: [
         { src: "./assets/fence-profile-brick-posts.png", alt: "Комбинированный забор с кирпичными столбами" },
         { src: "./assets/fence-gallery/combined-01.jpg", alt: "Комбинированный забор с кирпичными столбами" },
-        { src: "./assets/fence-gallery/combined-03.jpg", alt: "Комбинированный забор с воротами" }
+        { src: "./assets/fence-gallery/combined-03.jpg", alt: "Комбинированный забор с воротами" },
+        { src: "./assets/long-fence.webp", alt: "Комбинированный забор с металлическим штакетником" }
       ],
       lead: "Решение под архитектуру дома: металлическое заполнение, кирпичные или усиленные столбы, декоративные покрытия и ворота в одном стиле.",
       text: "Комбинированный забор собирается под конкретный участок: можно сделать глухое заполнение из профнастила, более легкий штакетник, жалюзи или секции, а несущую часть усилить кирпичными столбами и фундаментом. Такой вариант чаще выбирают для фасада и въездной группы.",
@@ -288,9 +288,7 @@
       image: "./assets/gates-gallery/sliding-proflist.jpg",
       imageAlt: "Откатные ворота из профнастила",
       gallery: [
-        { src: "./assets/gates-gallery/sliding-proflist.jpg", alt: "Откатные ворота с заполнением профлистом" },
-        { src: "./assets/gates-gallery/sliding-proftruba.jpg", alt: "Откатные ворота из профильной трубы" },
-        { src: "./assets/gates-gallery/sliding-picket.jpg", alt: "Откатные ворота с металлическим штакетником" }
+        { src: "./assets/gates-gallery/sliding-proflist.jpg", alt: "Откатные ворота с заполнением профлистом" }
       ],
       lead: "Полотно сдвигается вдоль линии забора и не занимает место перед въездом.",
       text: "Профлист закрывает участок от обзора, а консольная откатная система удобна там, где перед въездом мало свободного места. Полотно изготавливается под ширину проема, общая длина увеличивается за счет технологической консольной части.",
@@ -377,8 +375,7 @@
       image: "./assets/gate-wicket-proflist.jpg",
       imageAlt: "Распашные ворота из профнастила с калиткой",
       gallery: [
-        { src: "./assets/gate-wicket-proflist.jpg", alt: "Зеленые ворота из профнастила с отдельной калиткой" },
-        { src: "./assets/gate-wicket-louver.jpg", alt: "Ворота жалюзи с калиткой" }
+        { src: "./assets/gate-wicket-proflist.jpg", alt: "Зеленые ворота из профнастила с отдельной калиткой" }
       ],
       lead: "Две распашные створки и отдельная калитка в едином стиле с забором и въездной группой.",
       text: "Профлист дает закрытое непросматриваемое заполнение, а отдельная калитка удобна для повседневного прохода без открытия ворот. Каркас, замок, петли и направление открывания подбираются на замере.",
@@ -403,12 +400,10 @@
       kicker: "ворота с калиткой",
       title: "Ворота жалюзи с калиткой",
       tag: "премиальное заполнение",
-      image: "./assets/gate-wicket-louver.jpg",
+      image: "./assets/gate-wicket-louver-20260714.webp",
       imageAlt: "Ворота жалюзи с калиткой",
       gallery: [
-        { src: "./assets/gate-wicket-louver.jpg", alt: "Ворота жалюзи с калиткой" },
-        { src: "./assets/gate-wicket-proflist.jpg", alt: "Ворота с калиткой из профнастила" },
-        { src: "./assets/fence-louver-gray.jpeg", alt: "Забор жалюзи серого цвета" }
+        { src: "./assets/gate-wicket-louver-20260714.webp", alt: "Ворота жалюзи с калиткой" }
       ],
       lead: "Горизонтальные ламели закрывают прямой обзор, но сохраняют вентиляцию и современный вид фасада.",
       text: "Такой вариант выбирают для современных домов и фасадной линии участка. Калитку можно сделать рядом с откатным полотном или встроить в общую въездную группу, сохранив единый рисунок ламелей.",
@@ -427,6 +422,34 @@
         "Замер въездной группы, подбор высоты и рисунка ламелей.",
         "Изготовление рамы, заполнения и калитки в едином стиле.",
         "Монтаж, регулировка фурнитуры и подготовка под автоматику при необходимости."
+      ]
+    },
+    "gate-ranch": {
+      kicker: "ворота ранчо",
+      title: "Ворота ранчо",
+      tag: "открытое горизонтальное заполнение",
+      image: "./assets/fence-louver-gray.jpeg",
+      imageAlt: "Ворота ранчо с горизонтальным заполнением",
+      gallery: [
+        { src: "./assets/fence-louver-gray.jpeg", alt: "Ворота ранчо с горизонтальным заполнением" }
+      ],
+      lead: "Горизонтальное открытое заполнение для фасадной линии, сада и участков, где важна легкая архитектурная геометрия.",
+      text: "Ворота ранчо визуально легче глухих полотен и хорошо сочетаются с открытыми металлическими ограждениями. Конструкцию можно сделать распашной или откатной, с отдельной калиткой и окраской в цвет забора.",
+      specs: [
+        ["Заполнение", "горизонтальные планки"],
+        ["Обзор", "открытый"],
+        ["Калитка", "рядом / по проекту"],
+        ["Стиль", "ранчо"]
+      ],
+      points: [
+        "Подходит для открытых фасадов и участков без задачи полной приватности.",
+        "Меньше парусность по сравнению с глухим профлистом.",
+        "Можно связать по цвету и рисунку с забором ранчо."
+      ],
+      included: [
+        "Замер проема и подбор схемы открывания.",
+        "Изготовление металлической рамы и горизонтального заполнения.",
+        "Монтаж, регулировка фурнитуры и согласование с линией забора."
       ]
     },
     "gate-sandwich": {
@@ -1138,38 +1161,54 @@
   const detailCards = Array.from(document.querySelectorAll("[data-fence-detail]"));
 
   document.querySelectorAll("[data-product-filter]").forEach(filter => {
-    const section = filter.closest(".fences-types");
+    const section = filter.closest("section") || filter.parentElement;
     if (!section) return;
 
-    const cards = Array.from(section.querySelectorAll(".fences-type-card"));
+    const cards = Array.from(section.querySelectorAll(".fences-type-card[data-filter-tags]"));
     if (!cards.length) return;
 
     const grid = section.querySelector(".fences-type-grid");
+    if (!grid) return;
+
     const empty = document.createElement("p");
     empty.className = "product-filter-empty";
     empty.textContent = "Нет решений по выбранному фильтру.";
     empty.hidden = true;
     grid.after(empty);
 
-    filter.addEventListener("click", event => {
-      const button = event.target.closest("[data-filter-value]");
-      if (!button) return;
-
-      const value = button.dataset.filterValue;
+    const applyFilter = value => {
       filter.querySelectorAll("[data-filter-value]").forEach(item => {
-        item.classList.toggle("is-active", item === button);
+        item.classList.toggle("is-active", item.dataset.filterValue === value);
+        item.setAttribute("aria-pressed", item.dataset.filterValue === value ? "true" : "false");
       });
+
+      grid.classList.add("is-filtered");
 
       let visibleCount = 0;
       cards.forEach(card => {
         const tags = (card.dataset.filterTags || "").split(/\s+/).filter(Boolean);
         const visible = value === "all" || tags.includes(value);
         card.hidden = !visible;
+        card.style.display = visible ? "" : "none";
+        card.classList.toggle("is-filtered-out", !visible);
+        card.setAttribute("aria-hidden", visible ? "false" : "true");
         if (visible) visibleCount += 1;
       });
 
       empty.hidden = visibleCount > 0;
+    };
+
+    filter.querySelectorAll("[data-filter-value]").forEach(button => {
+      button.setAttribute("aria-pressed", button.classList.contains("is-active") ? "true" : "false");
     });
+
+    filter.querySelectorAll("[data-filter-value]").forEach(button => {
+      button.addEventListener("click", () => {
+        applyFilter(button.dataset.filterValue || "all");
+      });
+    });
+
+    applyFilter("all");
   });
 
   if (modal && detailCards.length) {
