@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:wght@400;600;700&family=Public+Sans:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260714-layout-images-v2" />
+    <link rel="stylesheet" href="./styles.css?v=20260717-nav-icons-all-pages" />
   </head>
   <body>
     <header class="site-header">
@@ -26,14 +26,13 @@
         </a>
 
         <nav class="site-nav" aria-label="Основная навигация">
-          <a href="./index.html">Главная</a>
-          <a href="./fences.html">Заборы</a>
-          <a class="is-active" href="./gates.html">Ворота</a>
-          <a href="./canopies.html">Навесы</a>
-          <a href="./piers.html">Причалы</a>
-          <a href="./repair.html">Ремонтные работы</a>
-          <a href="./materials.html">Материалы</a>
-          <a href="./contacts.html">Контакты</a>
+          <a href="./fences.html"><span class="site-nav-label">Заборы</span><span class="site-nav-icon nav-icon-fence" aria-hidden="true"></span></a>
+          <a class="is-active" href="./gates.html"><span class="site-nav-label">Ворота</span><span class="site-nav-icon nav-icon-gates" aria-hidden="true"></span></a>
+          <a href="./canopies.html"><span class="site-nav-label">Навесы</span><span class="site-nav-icon nav-icon-canopy" aria-hidden="true"></span></a>
+          <a href="./piers.html"><span class="site-nav-label">Причалы</span><span class="site-nav-icon nav-icon-piers" aria-hidden="true"></span></a>
+          <a href="./repair.html"><span class="site-nav-label">Ремонтные работы</span><span class="site-nav-icon nav-icon-repair" aria-hidden="true"></span></a>
+          <a href="./materials.html"><span class="site-nav-label">Материалы</span><span class="site-nav-icon nav-icon-materials" aria-hidden="true"></span></a>
+          <a href="./contacts.html"><span class="site-nav-label">Контакты</span><span class="site-nav-icon nav-icon-contacts" aria-hidden="true"></span></a>
         </nav>
 
         <div class="header-tools">
@@ -84,165 +83,349 @@
         </div>
       </section>
 
-      <section class="fences-types" id="gate-types">
+      <section class="fences-types gates-categories" id="gate-types">
         <div class="container">
           <div class="fences-section-head">
             <span class="fences-kicker">каталог решений</span>
             <h2>Виды ворот</h2>
-            <p>
-              Подберите ворота по механике, заполнению и наличию калитки: от
-              практичного профлиста до жалюзи, сэндвич-панелей и декоративного металла.
-            </p>
+            <p>Выберите нужный подраздел и сравните подходящие конструкции. Карточки сохранены и распределены по типу открывания, наличию калитки, дизайну и автоматике.</p>
           </div>
 
-          <div class="product-filter" data-product-filter aria-label="Фильтр ворот">
-            <button class="is-active" type="button" data-filter-value="all">Все</button>
-            <button type="button" data-filter-value="sliding">Откатные</button>
-            <button type="button" data-filter-value="swing">Распашные</button>
-            <button type="button" data-filter-value="wicket">С калиткой</button>
-            <button type="button" data-filter-value="solid">Глухие</button>
-            <button type="button" data-filter-value="open">Открытые</button>
-            <button type="button" data-filter-value="ranch">Ранчо</button>
-            <button type="button" data-filter-value="auto">Автоматика</button>
-          </div>
+          <nav class="gate-subsection-nav" aria-label="Виды ворот">
+              <a href="#gates-sliding">Откатные</a>
+              <a href="#gates-swing">Распашные</a>
+              <a href="#gates-wicket">Ворота с калиткой</a>
+              <a href="#gates-artistic">Художественные по эскизам</a>
+              <a href="#gates-automation">Автоматика для ворот</a>
+          </nav>
 
-          <div class="fences-type-grid">
-            <article class="fences-type-card" data-fence-detail="gate-sliding" data-filter-tags="sliding solid auto proflist">
-              <div class="fences-type-media">
-                <img src="./assets/gates-gallery/sliding-proflist.jpg" alt="Откатные ворота из профнастила" />
+          <div class="gate-category-list">
+          <section class="gate-category" id="gates-sliding">
+            <div class="gate-category-head">
+              <span>01</span>
+              <div>
+                <h3>Откатные ворота</h3>
+                <p>Сдвигаются вдоль забора и сохраняют свободное место перед въездом.</p>
               </div>
-              <div class="fences-type-body">
-                <span class="fences-type-index">01</span>
-                <h3>Откатные из профнастила</h3>
-                <p>Глухое полотно уходит вдоль забора и закрывает участок от обзора.</p>
-                <dl class="fences-specs">
-                  <div><dt>Проем</dt><dd>3-5 м</dd></div>
-                  <div><dt>Откат</dt><dd>сбоку</dd></div>
-                  <div><dt>Опции</dt><dd>привод</dd></div>
-                </dl>
-                <button class="fences-type-open" type="button">Подробнее</button>
-              </div>
-            </article>
+            </div>
+            <div class="fences-type-grid">
+              <article class="fences-type-card" data-fence-detail="gate-sliding" data-filter-tags="sliding solid auto proflist">
+                <div class="fences-type-media">
+                  <img src="./assets/gates-gallery/sliding-proflist.jpg" alt="Откатные ворота из профнастила" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">01</span>
+                  <h3>Откатные из профнастила</h3>
+                  <p>Глухое полотно уходит вдоль забора и закрывает участок от обзора.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Проем</dt><dd>3-5 м</dd></div>
+                    <div><dt>Откат</dt><dd>сбоку</dd></div>
+                    <div><dt>Опции</dt><dd>привод</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
 
-            <article class="fences-type-card" data-fence-detail="gate-sliding-picket" data-filter-tags="sliding open auto picket">
-              <div class="fences-type-media">
-                <img src="./assets/gates-gallery/sliding-picket.jpg" alt="Откатные ворота из евроштакетника" />
-              </div>
-              <div class="fences-type-body">
-                <span class="fences-type-index">02</span>
-                <h3>Откатные из евроштакетника</h3>
-                <p>Легкая конструкция с зазорами или шахматным заполнением.</p>
-                <dl class="fences-specs">
-                  <div><dt>Высота</dt><dd>1,5-1,8 м</dd></div>
-                  <div><dt>Обзор</dt><dd>частичный</dd></div>
-                  <div><dt>Опции</dt><dd>привод</dd></div>
-                </dl>
-                <button class="fences-type-open" type="button">Подробнее</button>
-              </div>
-            </article>
+              <article class="fences-type-card" data-fence-detail="gate-sliding-picket" data-filter-tags="sliding open auto picket">
+                <div class="fences-type-media">
+                  <img src="./assets/gates-gallery/sliding-picket.jpg" alt="Откатные ворота из евроштакетника" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">02</span>
+                  <h3>Откатные из евроштакетника</h3>
+                  <p>Легкая конструкция с зазорами или шахматным заполнением.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Высота</dt><dd>1,5-1,8 м</dd></div>
+                    <div><dt>Обзор</dt><dd>частичный</dd></div>
+                    <div><dt>Опции</dt><dd>привод</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
 
-            <article class="fences-type-card" data-fence-detail="gate-wicket" data-filter-tags="swing wicket solid proflist">
-              <div class="fences-type-media">
-                <img src="./assets/gate-wicket-proflist.jpg" alt="Распашные ворота из профнастила с калиткой" />
-              </div>
-              <div class="fences-type-body">
-                <span class="fences-type-index">03</span>
-                <h3>Распашные с калиткой из профнастила</h3>
-                <p>Классическая въездная группа: две створки и отдельная калитка в одном стиле.</p>
-                <dl class="fences-specs">
-                  <div><dt>Створки</dt><dd>2 шт.</dd></div>
-                  <div><dt>Калитка</dt><dd>рядом</dd></div>
-                  <div><dt>Полотно</dt><dd>глухое</dd></div>
-                </dl>
-                <button class="fences-type-open" type="button">Подробнее</button>
-              </div>
-            </article>
+              <article class="fences-type-card" data-fence-detail="gate-wicket-louver" data-filter-tags="sliding wicket solid louver auto">
+                <div class="fences-type-media">
+                  <img src="./assets/gate-wicket-louver-20260714.webp" alt="Ворота жалюзи с калиткой" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">04</span>
+                  <h3>Ворота жалюзи с калиткой</h3>
+                  <p>Приватное заполнение с вентиляцией и строгой современной геометрией.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Тип</dt><dd>откатные</dd></div>
+                    <div><dt>Калитка</dt><dd>рядом</dd></div>
+                    <div><dt>Вид</dt><dd>премиум</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
 
-            <article class="fences-type-card" data-fence-detail="gate-wicket-louver" data-filter-tags="sliding wicket solid louver auto">
-              <div class="fences-type-media">
-                <img src="./assets/gate-wicket-louver-20260714.webp" alt="Ворота жалюзи с калиткой" />
-              </div>
-              <div class="fences-type-body">
-                <span class="fences-type-index">04</span>
-                <h3>Ворота жалюзи с калиткой</h3>
-                <p>Приватное заполнение с вентиляцией и строгой современной геометрией.</p>
-                <dl class="fences-specs">
-                  <div><dt>Тип</dt><dd>откатные</dd></div>
-                  <div><dt>Калитка</dt><dd>рядом</dd></div>
-                  <div><dt>Вид</dt><dd>премиум</dd></div>
-                </dl>
-                <button class="fences-type-open" type="button">Подробнее</button>
-              </div>
-            </article>
+              <article class="fences-type-card" data-fence-detail="gate-sandwich" data-filter-tags="sliding solid auto sandwich">
+                <div class="fences-type-media">
+                  <img src="./assets/catalog-gates.webp" alt="Откатные ворота из сэндвич-панелей" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">07</span>
+                  <h3>Откатные из сэндвич-панелей</h3>
+                  <p>Ровное непросматриваемое полотно с аккуратной современной поверхностью.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Полотно</dt><dd>панели</dd></div>
+                    <div><dt>Фактура</dt><dd>по выбору</dd></div>
+                    <div><dt>Опции</dt><dd>привод</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
+            </div>
+          </section>
 
-            <article class="fences-type-card" data-fence-detail="gate-ranch" data-filter-tags="open ranch decorative">
-              <div class="fences-type-media">
-                <img src="./assets/fence-louver-gray.jpeg" alt="Ворота ранчо с горизонтальным заполнением" />
+          <section class="gate-category" id="gates-swing">
+            <div class="gate-category-head">
+              <span>02</span>
+              <div>
+                <h3>Распашные ворота</h3>
+                <p>Классические створчатые конструкции для участков со свободной зоной открывания.</p>
               </div>
-              <div class="fences-type-body">
-                <span class="fences-type-index">05</span>
-                <h3>Ворота ранчо</h3>
-                <p>Открытое горизонтальное заполнение для легкой фасадной линии.</p>
-                <dl class="fences-specs">
-                  <div><dt>Вид</dt><dd>открытые</dd></div>
-                  <div><dt>Калитка</dt><dd>по проекту</dd></div>
-                  <div><dt>Стиль</dt><dd>ранчо</dd></div>
-                </dl>
-                <button class="fences-type-open" type="button">Подробнее</button>
-              </div>
-            </article>
+            </div>
+            <div class="fences-type-grid">
+              <article class="fences-type-card" data-fence-detail="gate-wicket" data-filter-tags="swing wicket solid proflist">
+                <div class="fences-type-media">
+                  <img src="./assets/gate-wicket-proflist.jpg" alt="Распашные ворота из профнастила с калиткой" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">03</span>
+                  <h3>Распашные с калиткой из профнастила</h3>
+                  <p>Классическая въездная группа: две створки и отдельная калитка в одном стиле.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Створки</dt><dd>2 шт.</dd></div>
+                    <div><dt>Калитка</dt><dd>рядом</dd></div>
+                    <div><dt>Полотно</dt><dd>глухое</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
 
-            <article class="fences-type-card" data-fence-detail="gate-swing" data-filter-tags="swing open auto proftruba">
-              <div class="fences-type-media">
-                <img src="./assets/gates-gallery/swing-proftruba.jpg" alt="Распашные ворота из профильной трубы" />
-              </div>
-              <div class="fences-type-body">
-                <span class="fences-type-index">06</span>
-                <h3>Распашные из профильной трубы</h3>
-                <p>Открытое металлическое заполнение с меньшей ветровой нагрузкой.</p>
-                <dl class="fences-specs">
-                  <div><dt>Каркас</dt><dd>металл</dd></div>
-                  <div><dt>Створки</dt><dd>2 шт.</dd></div>
-                  <div><dt>Обзор</dt><dd>открытый</dd></div>
-                </dl>
-                <button class="fences-type-open" type="button">Подробнее</button>
-              </div>
-            </article>
+              <article class="fences-type-card" data-fence-detail="gate-ranch" data-filter-tags="open ranch decorative">
+                <div class="fences-type-media">
+                  <img src="./assets/fence-louver-gray.jpeg" alt="Ворота ранчо с горизонтальным заполнением" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">05</span>
+                  <h3>Ворота ранчо</h3>
+                  <p>Открытое горизонтальное заполнение для легкой фасадной линии.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Вид</dt><dd>открытые</dd></div>
+                    <div><dt>Калитка</dt><dd>по проекту</dd></div>
+                    <div><dt>Стиль</dt><dd>ранчо</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
 
-            <article class="fences-type-card" data-fence-detail="gate-sandwich" data-filter-tags="sliding solid auto sandwich">
-              <div class="fences-type-media">
-                <img src="./assets/catalog-gates.webp" alt="Откатные ворота из сэндвич-панелей" />
-              </div>
-              <div class="fences-type-body">
-                <span class="fences-type-index">07</span>
-                <h3>Откатные из сэндвич-панелей</h3>
-                <p>Ровное непросматриваемое полотно с аккуратной современной поверхностью.</p>
-                <dl class="fences-specs">
-                  <div><dt>Полотно</dt><dd>панели</dd></div>
-                  <div><dt>Фактура</dt><dd>по выбору</dd></div>
-                  <div><dt>Опции</dt><dd>привод</dd></div>
-                </dl>
-                <button class="fences-type-open" type="button">Подробнее</button>
-              </div>
-            </article>
+              <article class="fences-type-card" data-fence-detail="gate-swing" data-filter-tags="swing open auto proftruba">
+                <div class="fences-type-media">
+                  <img src="./assets/gates-gallery/swing-proftruba.jpg" alt="Распашные ворота из профильной трубы" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">06</span>
+                  <h3>Распашные из профильной трубы</h3>
+                  <p>Открытое металлическое заполнение с меньшей ветровой нагрузкой.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Каркас</dt><dd>металл</dd></div>
+                    <div><dt>Створки</dt><dd>2 шт.</dd></div>
+                    <div><dt>Обзор</dt><dd>открытый</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
 
-            <article class="fences-type-card" data-fence-detail="gate-forged" data-filter-tags="swing open decorative">
-              <div class="fences-type-media">
-                <img src="./assets/gates-gallery/swing-picket-house.jpg" alt="Распашные ворота с декоративным металлом" />
-              </div>
-              <div class="fences-type-body">
-                <span class="fences-type-index">08</span>
-                <h3>Распашные с декоративным металлом</h3>
-                <p>Ковка, решетка или комбинированное заполнение для фасадной зоны.</p>
-                <dl class="fences-specs">
-                  <div><dt>Дизайн</dt><dd>по проекту</dd></div>
-                  <div><dt>Калитка</dt><dd>в стиле</dd></div>
-                  <div><dt>Вид</dt><dd>декор</dd></div>
-                </dl>
-                <button class="fences-type-open" type="button">Подробнее</button>
-              </div>
-            </article>
+              <article class="fences-type-card" data-fence-detail="gate-forged" data-filter-tags="swing open decorative artistic">
+                <div class="fences-type-media">
+                  <img src="./assets/gates-gallery/swing-picket-house.jpg" alt="Художественные ворота по эскизу" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">08</span>
+                  <h3>Художественные ворота по эскизам</h3>
+                  <p>Ковка, решетка или комбинированное заполнение по индивидуальному эскизу.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Дизайн</dt><dd>по проекту</dd></div>
+                    <div><dt>Калитка</dt><dd>в стиле</dd></div>
+                    <div><dt>Вид</dt><dd>декор</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
+            </div>
+          </section>
 
+          <section class="gate-category" id="gates-wicket">
+            <div class="gate-category-head">
+              <span>03</span>
+              <div>
+                <h3>Ворота с калиткой</h3>
+                <p>Единая въездная группа с удобным отдельным проходом для ежедневного использования.</p>
+              </div>
+            </div>
+            <div class="fences-type-grid">
+              <article class="fences-type-card" data-fence-detail="gate-wicket" data-filter-tags="swing wicket solid proflist">
+                <div class="fences-type-media">
+                  <img src="./assets/gate-wicket-proflist.jpg" alt="Распашные ворота из профнастила с калиткой" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">03</span>
+                  <h3>Распашные с калиткой из профнастила</h3>
+                  <p>Классическая въездная группа: две створки и отдельная калитка в одном стиле.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Створки</dt><dd>2 шт.</dd></div>
+                    <div><dt>Калитка</dt><dd>рядом</dd></div>
+                    <div><dt>Полотно</dt><dd>глухое</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
+
+              <article class="fences-type-card" data-fence-detail="gate-wicket-louver" data-filter-tags="sliding wicket solid louver auto">
+                <div class="fences-type-media">
+                  <img src="./assets/gate-wicket-louver-20260714.webp" alt="Ворота жалюзи с калиткой" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">04</span>
+                  <h3>Ворота жалюзи с калиткой</h3>
+                  <p>Приватное заполнение с вентиляцией и строгой современной геометрией.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Тип</dt><dd>откатные</dd></div>
+                    <div><dt>Калитка</dt><dd>рядом</dd></div>
+                    <div><dt>Вид</dt><dd>премиум</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="gate-category" id="gates-artistic">
+            <div class="gate-category-head">
+              <span>04</span>
+              <div>
+                <h3>Художественные ворота по эскизам</h3>
+                <p>Индивидуальный рисунок, ковка и декоративный металл под архитектуру дома.</p>
+              </div>
+            </div>
+            <div class="fences-type-grid">
+              <article class="fences-type-card" data-fence-detail="gate-forged" data-filter-tags="swing open decorative artistic">
+                <div class="fences-type-media">
+                  <img src="./assets/gates-gallery/swing-picket-house.jpg" alt="Художественные ворота по эскизу" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">08</span>
+                  <h3>Художественные ворота по эскизам</h3>
+                  <p>Ковка, решетка или комбинированное заполнение по индивидуальному эскизу.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Дизайн</dt><dd>по проекту</dd></div>
+                    <div><dt>Калитка</dt><dd>в стиле</dd></div>
+                    <div><dt>Вид</dt><dd>декор</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="gate-category" id="gates-automation">
+            <div class="gate-category-head">
+              <span>05</span>
+              <div>
+                <h3>Автоматика для ворот</h3>
+                <p>Ворота, которые можно оснастить приводом, пультами и системами безопасности.</p>
+              </div>
+            </div>
+            <div class="fences-type-grid">
+              <article class="fences-type-card" data-fence-detail="gate-sliding" data-filter-tags="sliding solid auto proflist">
+                <div class="fences-type-media">
+                  <img src="./assets/gates-gallery/sliding-proflist.jpg" alt="Откатные ворота из профнастила" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">01</span>
+                  <h3>Откатные из профнастила</h3>
+                  <p>Глухое полотно уходит вдоль забора и закрывает участок от обзора.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Проем</dt><dd>3-5 м</dd></div>
+                    <div><dt>Откат</dt><dd>сбоку</dd></div>
+                    <div><dt>Опции</dt><dd>привод</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
+
+              <article class="fences-type-card" data-fence-detail="gate-sliding-picket" data-filter-tags="sliding open auto picket">
+                <div class="fences-type-media">
+                  <img src="./assets/gates-gallery/sliding-picket.jpg" alt="Откатные ворота из евроштакетника" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">02</span>
+                  <h3>Откатные из евроштакетника</h3>
+                  <p>Легкая конструкция с зазорами или шахматным заполнением.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Высота</dt><dd>1,5-1,8 м</dd></div>
+                    <div><dt>Обзор</dt><dd>частичный</dd></div>
+                    <div><dt>Опции</dt><dd>привод</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
+
+              <article class="fences-type-card" data-fence-detail="gate-wicket-louver" data-filter-tags="sliding wicket solid louver auto">
+                <div class="fences-type-media">
+                  <img src="./assets/gate-wicket-louver-20260714.webp" alt="Ворота жалюзи с калиткой" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">04</span>
+                  <h3>Ворота жалюзи с калиткой</h3>
+                  <p>Приватное заполнение с вентиляцией и строгой современной геометрией.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Тип</dt><dd>откатные</dd></div>
+                    <div><dt>Калитка</dt><dd>рядом</dd></div>
+                    <div><dt>Вид</dt><dd>премиум</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
+
+              <article class="fences-type-card" data-fence-detail="gate-swing" data-filter-tags="swing open auto proftruba">
+                <div class="fences-type-media">
+                  <img src="./assets/gates-gallery/swing-proftruba.jpg" alt="Распашные ворота из профильной трубы" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">06</span>
+                  <h3>Распашные из профильной трубы</h3>
+                  <p>Открытое металлическое заполнение с меньшей ветровой нагрузкой.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Каркас</dt><dd>металл</dd></div>
+                    <div><dt>Створки</dt><dd>2 шт.</dd></div>
+                    <div><dt>Обзор</dt><dd>открытый</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
+
+              <article class="fences-type-card" data-fence-detail="gate-sandwich" data-filter-tags="sliding solid auto sandwich">
+                <div class="fences-type-media">
+                  <img src="./assets/catalog-gates.webp" alt="Откатные ворота из сэндвич-панелей" />
+                </div>
+                <div class="fences-type-body">
+                  <span class="fences-type-index">07</span>
+                  <h3>Откатные из сэндвич-панелей</h3>
+                  <p>Ровное непросматриваемое полотно с аккуратной современной поверхностью.</p>
+                  <dl class="fences-specs">
+                    <div><dt>Полотно</dt><dd>панели</dd></div>
+                    <div><dt>Фактура</dt><dd>по выбору</dd></div>
+                    <div><dt>Опции</dt><dd>привод</dd></div>
+                  </dl>
+                  <button class="fences-type-open" type="button">Подробнее</button>
+                </div>
+              </article>
+            </div>
+          </section>
           </div>
         </div>
       </section>
@@ -350,7 +533,7 @@
 
     </main>
 
-    
+
     <footer class="site-footer">
       <div class="container footer-shell">
         <div class="footer-main footer-main-modern">
@@ -391,6 +574,6 @@
         </div>
       </div>
     </footer>
-    <script src="./assets/site-effects.js?v=20260714-gate-gallery"></script>
+    <script src="./assets/site-effects.js?v=20260717-gate-sections-icons"></script>
   </body>
 </html>
